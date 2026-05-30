@@ -1,0 +1,16 @@
+package com.krisnaajiep.markdownnotetaking.service;
+
+import com.krisnaajiep.markdownnotetaking.model.Note;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+
+public interface NoteService {
+    Note save(MultipartFile file) throws IOException;
+
+    void check(String filename) throws IOException;
+
+    void list() throws IOException;
+
+    void render(String filename) throws IOException;
+}
