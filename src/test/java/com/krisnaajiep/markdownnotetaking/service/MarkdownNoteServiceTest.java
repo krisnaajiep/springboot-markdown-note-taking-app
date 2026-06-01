@@ -28,6 +28,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Stream;
@@ -51,7 +52,7 @@ class MarkdownNoteServiceTest {
     @Mock
     private LocalStorageService storageService;
 
-    private MarkdownNoteService noteServiceForCheck;
+    private MarkdownNoteService noteServiceWithMockStorageService;
 
     private Note note;
     private MultipartFile file;
@@ -74,7 +75,7 @@ class MarkdownNoteServiceTest {
                 grammarCheckService
         );
 
-        noteServiceForCheck = new MarkdownNoteService(
+        noteServiceWithMockStorageService = new MarkdownNoteService(
                 noteRepository,
                 storageService,
                 new MarkdownFileValidator(),
@@ -137,7 +138,7 @@ class MarkdownNoteServiceTest {
         when(storageService.load(anyString())).thenReturn("content");
         when(grammarCheckService.check(anyString(), anyString())).thenThrow(new BadGatewayException("LanguageTool API is currently unavailable."));
 
-        assertThrows(BadGatewayException.class, () -> noteServiceForCheck.check(note.getOriginalFilename()));
+        assertThrows(BadGatewayException.class, () -> noteServiceWithMockStorageService.check(note.getOriginalFilename()));
 
         verify(noteRepository, times(1)).findByOriginalFilename(anyString());
         verify(storageService, times(1)).load(anyString());
@@ -153,13 +154,42 @@ class MarkdownNoteServiceTest {
         when(storageService.load(anyString())).thenReturn("content");
         when(grammarCheckService.check(anyString(), anyString())).thenReturn(mockResponse);
 
-        GrammarCheckResponse response = noteServiceForCheck.check(note.getOriginalFilename());
+        GrammarCheckResponse response = noteServiceWithMockStorageService.check(note.getOriginalFilename());
         assertEquals(mockResponse, response);
 
         verify(noteRepository, times(1)).findByOriginalFilename(anyString());
         verify(storageService, times(1)).load(anyString());
         verify(grammarCheckService, times(1)).check(anyString(), anyString());
         verifyNoMoreInteractions(noteRepository, storageService, grammarCheckService);
+    }
+
+    @Test
+    void list_withUnmatchFilenameInListOfPath_shouldReturnEmptyList() throws IOException {
+        when(noteRepository.findAll()).thenReturn(List.of(note));
+        when(storageService.list()).thenReturn(List.of(tempDir.resolve("unmatched.md")));
+
+        List<Note> result = noteServiceWithMockStorageService.list();
+
+        assertTrue(result.isEmpty());
+
+        verify(noteRepository, times(1)).findAll();
+        verify(storageService, times(1)).list();
+        verifyNoMoreInteractions(noteRepository, storageService);
+    }
+
+    @Test
+    void list_withMatchFilenameInListOfPath_shouldReturnListOfNotes() throws IOException {
+        when(noteRepository.findAll()).thenReturn(List.of(note));
+        when(storageService.list()).thenReturn(List.of(tempDir.resolve(note.getFilename() + ".md")));
+
+        List<Note> result = noteServiceWithMockStorageService.list();
+
+        assertEquals(1, result.size());
+        assertEquals(note, result.getFirst());
+
+        verify(noteRepository, times(1)).findAll();
+        verify(storageService, times(1)).list();
+        verifyNoMoreInteractions(noteRepository, storageService);
     }
 
     static Stream<Arguments> invalidFile() {
