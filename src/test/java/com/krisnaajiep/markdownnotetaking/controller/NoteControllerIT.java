@@ -1,7 +1,9 @@
 package com.krisnaajiep.markdownnotetaking.controller;
 
+import com.krisnaajiep.markdownnotetaking.dto.GrammarCheckResponse;
 import com.krisnaajiep.markdownnotetaking.model.Note;
 import com.krisnaajiep.markdownnotetaking.model.NoteRepository;
+import com.krisnaajiep.markdownnotetaking.service.GrammarCheckService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,6 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,6 +30,9 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.multipart;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -43,8 +49,15 @@ class NoteControllerIT {
     @Autowired
     private NoteRepository noteRepository;
 
+    @MockitoBean
+    private GrammarCheckService grammarCheckService;
+
+    private GrammarCheckResponse grammarCheckResponse;
+
     @Value("${app.storage.root-location}")
     private String fileLocation;
+
+    private MockMultipartFile file;
 
     @BeforeEach
     void setUp() throws IOException {
@@ -59,6 +72,27 @@ class NoteControllerIT {
                 }
             }
         }
+
+        file = new MockMultipartFile(
+                "file",
+                "test.md",
+                MediaType.TEXT_MARKDOWN_VALUE,
+                "# Introduction\n Iam a software engineer".getBytes()
+        );
+
+        grammarCheckResponse = GrammarCheckResponse.builder()
+                .software("LanguageTool")
+                .language("English")
+                .results(Stream.of(
+                        GrammarCheckResponse.Result.builder()
+                                .message("Possible spelling mistake found")
+                                .suggestions(Stream.of("I am").toList())
+                                .offset(17)
+                                .length(3)
+                                .context(Map.of("text", "Iam a software engineer", "offset", 0, "length", 24))
+                                .build()
+                ).toList())
+                .build();
     }
 
     @AfterEach
@@ -88,11 +122,6 @@ class NoteControllerIT {
 
     @Test
     void save_withValidFileAndDuplicateOriginalName_shouldReturn409() throws Exception {
-        MockMultipartFile file = new MockMultipartFile(
-                "file",
-                "test.md",
-                MediaType.TEXT_MARKDOWN_VALUE, "content".getBytes());
-
         mockMvc.perform(multipart("/notes").file(file))
                 .andExpect(status().isCreated());
 
@@ -116,13 +145,6 @@ class NoteControllerIT {
 
     @Test
     void save_withValidFileAndUniqueOriginalFilename_shouldReturn201() throws Exception {
-        MockMultipartFile file = new MockMultipartFile(
-                "file",
-                "test.md",
-                MediaType.TEXT_MARKDOWN_VALUE,
-                "content".getBytes()
-        );
-
         MvcResult result = mockMvc.perform(multipart("/notes").file(file))
                 .andExpect(status().isCreated())
                 .andReturn();
@@ -136,6 +158,70 @@ class NoteControllerIT {
 
         assertNotNull(noteRepository.findById(note.getId()));
         assertTrue(Files.exists(Path.of(fileLocation + "/" + note.getFilename() + ".md")));
+    }
+
+    @Test
+    void check_withNoExistingFile_shouldReturn404() throws Exception {
+        MvcResult result = mockMvc.perform(get("/notes/check").param("filename", "nonexistent.md"))
+                .andExpect(status().isNotFound())
+                .andReturn();
+
+        Map<String, String> response = objectMapper.readValue(
+                result.getResponse().getContentAsString(),
+                new TypeReference<>() {}
+        );
+
+        assertFalse(response.get("error").isBlank());
+    }
+
+    @Test
+    void check_withExistingFileAndErrorCheckApi_shouldReturn502() throws Exception {
+        when(grammarCheckService.check(anyString(), anyString())).thenThrow(new BadGatewayException("LanguageTool API is currently unavailable."));
+
+        mockMvc.perform(multipart("/notes").file(file))
+                .andExpect(status().isCreated());
+
+        Note note = noteRepository.findByOriginalFilename(file.getOriginalFilename()).orElseThrow();
+
+        MvcResult result = mockMvc.perform(get("/notes/check").param("filename", note.getOriginalFilename()))
+                .andExpect(status().isBadGateway())
+                .andReturn();
+
+        Map<String, String> response = objectMapper.readValue(
+                result.getResponse().getContentAsString(),
+                new TypeReference<>() {}
+        );
+
+        assertFalse(response.get("error").isBlank());
+
+        verify(grammarCheckService, times(1)).check(anyString(), anyString());
+        verifyNoMoreInteractions(grammarCheckService);
+    }
+
+    @Test
+    void check_withExistingFile_shouldReturn200() throws Exception {
+        when(grammarCheckService.check(anyString(), anyString())).thenReturn(grammarCheckResponse);
+
+        mockMvc.perform(multipart("/notes").file(file))
+                .andExpect(status().isCreated());
+
+        Note note = noteRepository.findByOriginalFilename(file.getOriginalFilename()).orElseThrow();
+
+        MvcResult result = mockMvc.perform(get("/notes/check").param("filename", note.getOriginalFilename()))
+                .andExpect(status().isOk())
+                .andReturn();
+
+        GrammarCheckResponse response = objectMapper.readValue(
+                result.getResponse().getContentAsString(),
+                GrammarCheckResponse.class
+        );
+
+        assertNotNull(response.getSoftware());
+        assertNotNull(response.getLanguage());
+        assertNotNull(response.getResults());
+
+        verify(grammarCheckService, times(1)).check(anyString(), anyString());
+        verifyNoMoreInteractions(grammarCheckService);
     }
 
     static Stream<Arguments> invalidFile() {

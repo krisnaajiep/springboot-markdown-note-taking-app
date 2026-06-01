@@ -26,4 +26,20 @@ public class NoteExceptionHandler {
                 Map.of("error", ex.getMessage())
         );
     }
+
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity<Object> handleNotFoundException(NotFoundException ex) {
+        log.warn("Not found error occurred: {}", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
+                Map.of("error", ex.getMessage())
+        );
+    }
+
+    @ExceptionHandler(BadGatewayException.class)
+    public ResponseEntity<Object> handleBadGatewayException(BadGatewayException ex) {
+        log.warn("Bad gateway error occurred: {}", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(
+                Map.of("error", ex.getMessage())
+        );
+    }
 }
