@@ -1,0 +1,5243 @@
+{
+  "software": {
+    "name": "LanguageTool",
+    "version": "6.9-SNAPSHOT",
+    "buildDate": "2026-05-26 17:36:45 +0000",
+    "apiVersion": 1,
+    "premium": true,
+    "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+    "status": ""
+  },
+  "warnings": {
+    "incompleteResults": false
+  },
+  "language": {
+    "name": "English (US)",
+    "code": "en-US",
+    "detectedLanguage": {
+      "name": "English (US)",
+      "code": "en-US",
+      "confidence": 0.99868387,
+      "source": "ngram"
+    }
+  },
+  "matches": [
+    {
+      "message": "Possible spelling mistake found.",
+      "shortMessage": "Spelling mistake",
+      "replacements": [
+        {
+          "value": "I am"
+        },
+        {
+          "value": "I'm"
+        },
+        {
+          "value": "IAM"
+        },
+        {
+          "value": "Am"
+        },
+        {
+          "value": "IBM"
+        },
+        {
+          "value": "Sam"
+        },
+        {
+          "value": "RAM"
+        },
+        {
+          "value": "Dam"
+        },
+        {
+          "value": "Ram"
+        },
+        {
+          "value": "Ham"
+        },
+        {
+          "value": "SAM"
+        },
+        {
+          "value": "Cam"
+        },
+        {
+          "value": "IAS"
+        },
+        {
+          "value": "IAU"
+        },
+        {
+          "value": "Nam"
+        },
+        {
+          "value": "Pam"
+        },
+        {
+          "value": "Tam"
+        },
+        {
+          "value": "Imam"
+        },
+        {
+          "value": "Yam"
+        },
+        {
+          "value": "EAM"
+        },
+        {
+          "value": "IAA"
+        },
+        {
+          "value": "IAC"
+        },
+        {
+          "value": "IAP"
+        },
+        {
+          "value": "ICM"
+        },
+        {
+          "value": "IOM"
+        },
+        {
+          "value": "FAM"
+        },
+        {
+          "value": "GAM"
+        },
+        {
+          "value": "IAB"
+        },
+        {
+          "value": "UAM"
+        },
+        {
+          "value": "Bam"
+        },
+        {
+          "value": "Iamb"
+        },
+        {
+          "value": "Jam"
+        },
+        {
+          "value": "AAM"
+        },
+        {
+          "value": "AM"
+        },
+        {
+          "value": "BAM"
+        },
+        {
+          "value": "BIAM"
+        },
+        {
+          "value": "CAM"
+        },
+        {
+          "value": "IA"
+        },
+        {
+          "value": "IA4"
+        },
+        {
+          "value": "IA8"
+        },
+        {
+          "value": "IAD"
+        },
+        {
+          "value": "IAE"
+        },
+        {
+          "value": "IAF"
+        },
+        {
+          "value": "IAG"
+        },
+        {
+          "value": "IAH"
+        },
+        {
+          "value": "IAI"
+        },
+        {
+          "value": "IAMT"
+        },
+        {
+          "value": "IAN"
+        },
+        {
+          "value": "IAO"
+        },
+        {
+          "value": "IAT"
+        },
+        {
+          "value": "IAV"
+        },
+        {
+          "value": "ICAM"
+        },
+        {
+          "value": "IDM"
+        },
+        {
+          "value": "IEM"
+        },
+        {
+          "value": "IFM"
+        },
+        {
+          "value": "IGM"
+        },
+        {
+          "value": "IIM"
+        },
+        {
+          "value": "IJM"
+        },
+        {
+          "value": "ILM"
+        },
+        {
+          "value": "IM"
+        },
+        {
+          "value": "INM"
+        },
+        {
+          "value": "IPAM"
+        },
+        {
+          "value": "IPM"
+        },
+        {
+          "value": "IRM"
+        },
+        {
+          "value": "ISAM"
+        },
+        {
+          "value": "ISM"
+        },
+        {
+          "value": "Ian"
+        },
+        {
+          "value": "Lam"
+        },
+        {
+          "value": "Liam"
+        },
+        {
+          "value": "MAM"
+        },
+        {
+          "value": "NAM"
+        },
+        {
+          "value": "OAM"
+        },
+        {
+          "value": "PAM"
+        },
+        {
+          "value": "Siam"
+        },
+        {
+          "value": "TAM"
+        },
+        {
+          "value": "VAM"
+        },
+        {
+          "value": "WAM"
+        },
+        {
+          "value": "ZAM"
+        },
+        {
+          "value": "Diam"
+        },
+        {
+          "value": "Ism"
+        },
+        {
+          "value": "A"
+        },
+        {
+          "value": "In"
+        },
+        {
+          "value": "Is"
+        },
+        {
+          "value": "Was"
+        },
+        {
+          "value": "I"
+        },
+        {
+          "value": "As"
+        },
+        {
+          "value": "At"
+        },
+        {
+          "value": "An"
+        },
+        {
+          "value": "Had"
+        },
+        {
+          "value": "Has"
+        },
+        {
+          "value": "It"
+        },
+        {
+          "value": "Can"
+        },
+        {
+          "value": "Him"
+        },
+        {
+          "value": "Day"
+        },
+        {
+          "value": "Film"
+        },
+        {
+          "value": "Game"
+        },
+        {
+          "value": "If"
+        },
+        {
+          "value": "Its"
+        },
+        {
+          "value": "May"
+        },
+        {
+          "value": "Name"
+        },
+        {
+          "value": "Same"
+        },
+        {
+          "value": "Team"
+        },
+        {
+          "value": "Came"
+        },
+        {
+          "value": "Km"
+        },
+        {
+          "value": "Law"
+        },
+        {
+          "value": "Man"
+        },
+        {
+          "value": "Way"
+        },
+        {
+          "value": "San"
+        },
+        {
+          "value": "Car"
+        },
+        {
+          "value": "Far"
+        },
+        {
+          "value": "Gas"
+        },
+        {
+          "value": "Pay"
+        },
+        {
+          "value": "Ran"
+        },
+        {
+          "value": "Saw"
+        },
+        {
+          "value": "Via"
+        },
+        {
+          "value": "War"
+        },
+        {
+          "value": "FM"
+        },
+        {
+          "value": "I'd"
+        },
+        {
+          "value": "Arm"
+        },
+        {
+          "value": "Bad"
+        },
+        {
+          "value": "Bar"
+        },
+        {
+          "value": "Camp"
+        },
+        {
+          "value": "Cm"
+        },
+        {
+          "value": "Com"
+        },
+        {
+          "value": "Fan"
+        },
+        {
+          "value": "Farm"
+        },
+        {
+          "value": "Firm"
+        },
+        {
+          "value": "Hey"
+        },
+        {
+          "value": "Ice"
+        },
+        {
+          "value": "Key"
+        },
+        {
+          "value": "Lay"
+        },
+        {
+          "value": "Map"
+        },
+        {
+          "value": "Mm"
+        },
+        {
+          "value": "Say"
+        },
+        {
+          "value": "Tax"
+        },
+        {
+          "value": "Van"
+        },
+        {
+          "value": "Iraq"
+        },
+        {
+          "value": "Jim"
+        },
+        {
+          "value": "PA"
+        },
+        {
+          "value": "Tom"
+        },
+        {
+          "value": "Ad"
+        },
+        {
+          "value": "Ban"
+        },
+        {
+          "value": "Bay"
+        },
+        {
+          "value": "Beam"
+        },
+        {
+          "value": "Cap"
+        },
+        {
+          "value": "Cat"
+        },
+        {
+          "value": "Eat"
+        },
+        {
+          "value": "Fame"
+        },
+        {
+          "value": "Gap"
+        },
+        {
+          "value": "Hat"
+        },
+        {
+          "value": "Heir"
+        },
+        {
+          "value": "Item"
+        },
+        {
+          "value": "Lap"
+        },
+        {
+          "value": "Raw"
+        },
+        {
+          "value": "Ray"
+        },
+        {
+          "value": "Sat"
+        },
+        {
+          "value": "Sum"
+        },
+        {
+          "value": "Tag"
+        },
+        {
+          "value": "Warm"
+        },
+        {
+          "value": "Adam"
+        },
+        {
+          "value": "CIA"
+        },
+        {
+          "value": "Dan"
+        },
+        {
+          "value": "IRA"
+        },
+        {
+          "value": "Iran"
+        },
+        {
+          "value": "Islam"
+        },
+        {
+          "value": "Jay"
+        },
+        {
+          "value": "LA"
+        },
+        {
+          "value": "MA"
+        },
+        {
+          "value": "Mac"
+        },
+        {
+          "value": "Max"
+        },
+        {
+          "value": "Miami"
+        },
+        {
+          "value": "PM"
+        },
+        {
+          "value": "Bag"
+        },
+        {
+          "value": "Bat"
+        },
+        {
+          "value": "Bias"
+        },
+        {
+          "value": "Calm"
+        },
+        {
+          "value": "Ear"
+        },
+        {
+          "value": "Exam"
+        },
+        {
+          "value": "Fat"
+        },
+        {
+          "value": "Gym"
+        },
+        {
+          "value": "Harm"
+        },
+        {
+          "value": "Ill"
+        },
+        {
+          "value": "Ink"
+        },
+        {
+          "value": "Ion"
+        },
+        {
+          "value": "Jaw"
+        },
+        {
+          "value": "Keys"
+        },
+        {
+          "value": "Lab"
+        },
+        {
+          "value": "Lamp"
+        },
+        {
+          "value": "Oak"
+        },
+        {
+          "value": "Palm"
+        },
+        {
+          "value": "Pan"
+        },
+        {
+          "value": "Pm"
+        },
+        {
+          "value": "Rap"
+        },
+        {
+          "value": "Rim"
+        },
+        {
+          "value": "Rpm"
+        },
+        {
+          "value": "Tram"
+        },
+        {
+          "value": "Vein"
+        },
+        {
+          "value": "Dame"
+        },
+        {
+          "value": "Han"
+        },
+        {
+          "value": "ICT"
+        },
+        {
+          "value": "ID"
+        },
+        {
+          "value": "IDF"
+        },
+        {
+          "value": "IOC"
+        },
+        {
+          "value": "IQ"
+        },
+        {
+          "value": "Ivan"
+        },
+        {
+          "value": "Neil"
+        },
+        {
+          "value": "Pat"
+        },
+        {
+          "value": "Reid"
+        },
+        {
+          "value": "SAS"
+        },
+        {
+          "value": "Wei"
+        },
+        {
+          "value": "Cab"
+        },
+        {
+          "value": "Dad"
+        },
+        {
+          "value": "Dams"
+        },
+        {
+          "value": "Dial"
+        },
+        {
+          "value": "Foam"
+        },
+        {
+          "value": "Gag"
+        },
+        {
+          "value": "Gum"
+        },
+        {
+          "value": "Hay"
+        },
+        {
+          "value": "Id"
+        },
+        {
+          "value": "Inn"
+        },
+        {
+          "value": "Las"
+        },
+        {
+          "value": "Mad"
+        },
+        {
+          "value": "Pad"
+        },
+        {
+          "value": "Par"
+        },
+        {
+          "value": "Ramp"
+        },
+        {
+          "value": "Rat"
+        },
+        {
+          "value": "Sad"
+        },
+        {
+          "value": "Slam"
+        },
+        {
+          "value": "Tan"
+        },
+        {
+          "value": "Tap"
+        },
+        {
+          "value": "Wax"
+        },
+        {
+          "value": "ACM"
+        },
+        {
+          "value": "AF"
+        },
+        {
+          "value": "ATM"
+        },
+        {
+          "value": "CAA"
+        },
+        {
+          "value": "DA"
+        },
+        {
+          "value": "DM"
+        },
+        {
+          "value": "DRM"
+        },
+        {
+          "value": "DSM"
+        },
+        {
+          "value": "Dom"
+        },
+        {
+          "value": "Fiat"
+        },
+        {
+          "value": "Guam"
+        },
+        {
+          "value": "IAAF"
+        },
+        {
+          "value": "IAEA"
+        },
+        {
+          "value": "IATA"
+        },
+        {
+          "value": "IBF"
+        },
+        {
+          "value": "ICU"
+        },
+        {
+          "value": "IEC"
+        },
+        {
+          "value": "IIT"
+        },
+        {
+          "value": "IMF"
+        },
+        {
+          "value": "INS"
+        },
+        {
+          "value": "IPA"
+        },
+        {
+          "value": "IPO"
+        },
+        {
+          "value": "IRS"
+        },
+        {
+          "value": "ISP"
+        },
+        {
+          "value": "ITF"
+        },
+        {
+          "value": "ITU"
+        },
+        {
+          "value": "Kai"
+        },
+        {
+          "value": "Kay"
+        },
+        {
+          "value": "Lamb"
+        },
+        {
+          "value": "Lao"
+        },
+        {
+          "value": "Lima"
+        },
+        {
+          "value": "Mae"
+        },
+        {
+          "value": "Mao"
+        },
+        {
+          "value": "NAD"
+        },
+        {
+          "value": "OEM"
+        },
+        {
+          "value": "PAC"
+        },
+        {
+          "value": "RPM"
+        },
+        {
+          "value": "Rama"
+        },
+        {
+          "value": "Rey"
+        },
+        {
+          "value": "SAP"
+        },
+        {
+          "value": "UA"
+        },
+        {
+          "value": "Amp"
+        },
+        {
+          "value": "Damp"
+        },
+        {
+          "value": "Dim"
+        },
+        {
+          "value": "Elm"
+        },
+        {
+          "value": "Fax"
+        },
+        {
+          "value": "Gem"
+        },
+        {
+          "value": "Gram"
+        },
+        {
+          "value": "Icy"
+        },
+        {
+          "value": "Ire"
+        },
+        {
+          "value": "Jams"
+        },
+        {
+          "value": "Jar"
+        },
+        {
+          "value": "Lag"
+        },
+        {
+          "value": "Ma"
+        },
+        {
+          "value": "Mat"
+        },
+        {
+          "value": "Mom"
+        },
+        {
+          "value": "Pa"
+        },
+        {
+          "value": "Pas"
+        },
+        {
+          "value": "Ppm"
+        },
+        {
+          "value": "Roam"
+        },
+        {
+          "value": "Rum"
+        },
+        {
+          "value": "Sac"
+        },
+        {
+          "value": "Sap"
+        },
+        {
+          "value": "Sax"
+        },
+        {
+          "value": "Scam"
+        },
+        {
+          "value": "Seam"
+        },
+        {
+          "value": "Spam"
+        },
+        {
+          "value": "Swam"
+        },
+        {
+          "value": "Ta"
+        },
+        {
+          "value": "Tab"
+        },
+        {
+          "value": "Tame"
+        },
+        {
+          "value": "Tar"
+        },
+        {
+          "value": "Var"
+        },
+        {
+          "value": "Veil"
+        },
+        {
+          "value": "AAU"
+        },
+        {
+          "value": "AIA"
+        },
+        {
+          "value": "AMX"
+        },
+        {
+          "value": "CAC"
+        },
+        {
+          "value": "DAC"
+        },
+        {
+          "value": "DAT"
+        },
+        {
+          "value": "DTM"
+        },
+        {
+          "value": "Diaz"
+        },
+        {
+          "value": "FAO"
+        },
+        {
+          "value": "FAQ"
+        },
+        {
+          "value": "Fay"
+        },
+        {
+          "value": "Hiram"
+        },
+        {
+          "value": "ICBM"
+        },
+        {
+          "value": "ICL"
+        },
+        {
+          "value": "ICP"
+        },
+        {
+          "value": "ICS"
+        },
+        {
+          "value": "IDs"
+        },
+        {
+          "value": "IFA"
+        },
+        {
+          "value": "IFC"
+        },
+        {
+          "value": "IG"
+        },
+        {
+          "value": "ILS"
+        },
+        {
+          "value": "IMG"
+        },
+        {
+          "value": "IMO"
+        },
+        {
+          "value": "IPC"
+        },
+        {
+          "value": "IPS"
+        },
+        {
+          "value": "IRL"
+        },
+        {
+          "value": "ISAF"
+        },
+        {
+          "value": "ITC"
+        },
+        {
+          "value": "ITN"
+        },
+        {
+          "value": "ITT"
+        },
+        {
+          "value": "Iain"
+        },
+        {
+          "value": "Iwo"
+        },
+        {
+          "value": "KLM"
+        },
+        {
+          "value": "KTM"
+        },
+        {
+          "value": "Kat"
+        },
+        {
+          "value": "MIA"
+        },
+        {
+          "value": "Meir"
+        },
+        {
+          "value": "Mia"
+        },
+        {
+          "value": "NAC"
+        },
+        {
+          "value": "Nat"
+        },
+        {
+          "value": "OAS"
+        },
+        {
+          "value": "PCM"
+        },
+        {
+          "value": "Paz"
+        },
+        {
+          "value": "RAC"
+        },
+        {
+          "value": "REM"
+        },
+        {
+          "value": "Reims"
+        },
+        {
+          "value": "SRAM"
+        },
+        {
+          "value": "TAC"
+        },
+        {
+          "value": "Tao"
+        },
+        {
+          "value": "UAV"
+        },
+        {
+          "value": "UAW"
+        },
+        {
+          "value": "VM"
+        },
+        {
+          "value": "WAC"
+        },
+        {
+          "value": "Ah"
+        },
+        {
+          "value": "Cal"
+        },
+        {
+          "value": "Cams"
+        },
+        {
+          "value": "Clam"
+        },
+        {
+          "value": "Fad"
+        },
+        {
+          "value": "Gal"
+        },
+        {
+          "value": "Hum"
+        },
+        {
+          "value": "iPad"
+        },
+        {
+          "value": "Ivy"
+        },
+        {
+          "value": "Lad"
+        },
+        {
+          "value": "Lame"
+        },
+        {
+          "value": "Lax"
+        },
+        {
+          "value": "Liar"
+        },
+        {
+          "value": "Loam"
+        },
+        {
+          "value": "Mum"
+        },
+        {
+          "value": "Oar"
+        },
+        {
+          "value": "Pal"
+        },
+        {
+          "value": "Paw"
+        },
+        {
+          "value": "Rag"
+        },
+        {
+          "value": "Rams"
+        },
+        {
+          "value": "Rein"
+        },
+        {
+          "value": "Sham"
+        },
+        {
+          "value": "Tau"
+        },
+        {
+          "value": "Um"
+        },
+        {
+          "value": "Vat"
+        },
+        {
+          "value": "Vial"
+        },
+        {
+          "value": "Yaw"
+        },
+        {
+          "value": "AAT"
+        },
+        {
+          "value": "ABM"
+        },
+        {
+          "value": "AD"
+        },
+        {
+          "value": "AFM"
+        },
+        {
+          "value": "APM"
+        },
+        {
+          "value": "Ami"
+        },
+        {
+          "value": "BPM"
+        },
+        {
+          "value": "BRM"
+        },
+        {
+          "value": "Baum"
+        },
+        {
+          "value": "CAI"
+        },
+        {
+          "value": "CBM"
+        },
+        {
+          "value": "CPM"
+        },
+        {
+          "value": "CTM"
+        },
+        {
+          "value": "DCM"
+        },
+        {
+          "value": "DWM"
+        },
+        {
+          "value": "Dias"
+        },
+        {
+          "value": "ERM"
+        },
+        {
+          "value": "Elam"
+        },
+        {
+          "value": "FAC"
+        },
+        {
+          "value": "FSM"
+        },
+        {
+          "value": "IBS"
+        },
+        {
+          "value": "ICJ"
+        },
+        {
+          "value": "ICMP"
+        },
+        {
+          "value": "ICR"
+        },
+        {
+          "value": "IDC"
+        },
+        {
+          "value": "IEA"
+        },
+        {
+          "value": "IED"
+        },
+        {
+          "value": "IEP"
+        },
+        {
+          "value": "IFL"
+        },
+        {
+          "value": "IFP"
+        },
+        {
+          "value": "IFR"
+        },
+        {
+          "value": "IGA"
+        },
+        {
+          "value": "IH"
+        },
+        {
+          "value": "IHS"
+        },
+        {
+          "value": "IMA"
+        },
+        {
+          "value": "IMAP"
+        },
+        {
+          "value": "IMC"
+        },
+        {
+          "value": "IMT"
+        },
+        {
+          "value": "IMU"
+        },
+        {
+          "value": "IPN"
+        },
+        {
+          "value": "IPP"
+        },
+        {
+          "value": "IPR"
+        },
+        {
+          "value": "IVB"
+        },
+        {
+          "value": "IVs"
+        },
+        {
+          "value": "Iago"
+        },
+        {
+          "value": "Irma"
+        },
+        {
+          "value": "JAL"
+        },
+        {
+          "value": "JDM"
+        },
+        {
+          "value": "JM"
+        },
+        {
+          "value": "JVM"
+        },
+        {
+          "value": "Jan"
+        },
+        {
+          "value": "KIA"
+        },
+        {
+          "value": "Kama"
+        },
+        {
+          "value": "LAX"
+        },
+        {
+          "value": "LSM"
+        },
+        {
+          "value": "Lat"
+        },
+        {
+          "value": "Leif"
+        },
+        {
+          "value": "Liao"
+        },
+        {
+          "value": "Noam"
+        },
+        {
+          "value": "PSM"
+        },
+        {
+          "value": "Priam"
+        },
+        {
+          "value": "RCM"
+        },
+        {
+          "value": "RSM"
+        },
+        {
+          "value": "SAA"
+        },
+        {
+          "value": "SRM"
+        },
+        {
+          "value": "SSM"
+        },
+        {
+          "value": "Sim"
+        },
+        {
+          "value": "TCM"
+        },
+        {
+          "value": "TPM"
+        },
+        {
+          "value": "Tia"
+        },
+        {
+          "value": "USM"
+        },
+        {
+          "value": "Ulm"
+        },
+        {
+          "value": "WAP"
+        },
+        {
+          "value": "Av"
+        },
+        {
+          "value": "Ax"
+        },
+        {
+          "value": "Balm"
+        },
+        {
+          "value": "Bum"
+        },
+        {
+          "value": "Cram"
+        },
+        {
+          "value": "Deism"
+        },
+        {
+          "value": "Hag"
+        },
+        {
+          "value": "Hams"
+        },
+        {
+          "value": "Hem"
+        },
+        {
+          "value": "iMac"
+        },
+        {
+          "value": "Imams"
+        },
+        {
+          "value": "Imp"
+        },
+        {
+          "value": "Jab"
+        },
+        {
+          "value": "Lac"
+        },
+        {
+          "value": "Lama"
+        },
+        {
+          "value": "Mag"
+        },
+        {
+          "value": "Mama"
+        },
+        {
+          "value": "Mar"
+        },
+        {
+          "value": "Nap"
+        },
+        {
+          "value": "Nay"
+        },
+        {
+          "value": "Oat"
+        },
+        {
+          "value": "Ohm"
+        },
+        {
+          "value": "Rem"
+        },
+        {
+          "value": "Sag"
+        },
+        {
+          "value": "Tai"
+        },
+        {
+          "value": "Tat"
+        },
+        {
+          "value": "Vamp"
+        },
+        {
+          "value": "Wan"
+        },
+        {
+          "value": "Yak"
+        },
+        {
+          "value": "Yams"
+        },
+        {
+          "value": "AQ"
+        },
+        {
+          "value": "BIM"
+        },
+        {
+          "value": "Biak"
+        },
+        {
+          "value": "DLM"
+        },
+        {
+          "value": "Dian"
+        },
+        {
+          "value": "GAF"
+        },
+        {
+          "value": "GBM"
+        },
+        {
+          "value": "IBP"
+        },
+        {
+          "value": "ICN"
+        },
+        {
+          "value": "ICO"
+        },
+        {
+          "value": "ICQ"
+        },
+        {
+          "value": "IDB"
+        },
+        {
+          "value": "IDG"
+        },
+        {
+          "value": "IDL"
+        },
+        {
+          "value": "IPI"
+        },
+        {
+          "value": "IQs"
+        },
+        {
+          "value": "IRAs"
+        },
+        {
+          "value": "ITE"
+        },
+        {
+          "value": "IUD"
+        },
+        {
+          "value": "Ina"
+        },
+        {
+          "value": "Iva"
+        },
+        {
+          "value": "Jami"
+        },
+        {
+          "value": "KVM"
+        },
+        {
+          "value": "Keir"
+        },
+        {
+          "value": "LCM"
+        },
+        {
+          "value": "LPM"
+        },
+        {
+          "value": "Leia"
+        },
+        {
+          "value": "Lem"
+        },
+        {
+          "value": "MDM"
+        },
+        {
+          "value": "NAL"
+        },
+        {
+          "value": "PNM"
+        },
+        {
+          "value": "Piaf"
+        },
+        {
+          "value": "Pima"
+        },
+        {
+          "value": "Qom"
+        },
+        {
+          "value": "SDM"
+        },
+        {
+          "value": "SGM"
+        },
+        {
+          "value": "UAR"
+        },
+        {
+          "value": "Aim"
+        },
+        {
+          "value": "Beys"
+        },
+        {
+          "value": "Dram"
+        },
+        {
+          "value": "Fem"
+        },
+        {
+          "value": "Gm"
+        },
+        {
+          "value": "Ilk"
+        },
+        {
+          "value": "Jag"
+        },
+        {
+          "value": "Maim"
+        },
+        {
+          "value": "Nag"
+        },
+        {
+          "value": "Pap"
+        },
+        {
+          "value": "Pax"
+        },
+        {
+          "value": "Rad"
+        },
+        {
+          "value": "Rah"
+        },
+        {
+          "value": "Tum"
+        },
+        {
+          "value": "Wag"
+        },
+        {
+          "value": "Yah"
+        },
+        {
+          "value": "Yum"
+        },
+        {
+          "value": "DVM"
+        },
+        {
+          "value": "FIAC"
+        },
+        {
+          "value": "GPM"
+        },
+        {
+          "value": "IEE"
+        },
+        {
+          "value": "IOU"
+        },
+        {
+          "value": "IRBM"
+        },
+        {
+          "value": "IRQ"
+        },
+        {
+          "value": "Isar"
+        },
+        {
+          "value": "Mab"
+        },
+        {
+          "value": "OAP"
+        },
+        {
+          "value": "RMM"
+        },
+        {
+          "value": "Tami"
+        },
+        {
+          "value": "UQAM"
+        },
+        {
+          "value": "WLM"
+        },
+        {
+          "value": "Bah"
+        },
+        {
+          "value": "Cad"
+        },
+        {
+          "value": "dBm"
+        },
+        {
+          "value": "Dab"
+        },
+        {
+          "value": "Gab"
+        },
+        {
+          "value": "Idem"
+        },
+        {
+          "value": "Ifs"
+        },
+        {
+          "value": "Isms"
+        },
+        {
+          "value": "Jamb"
+        },
+        {
+          "value": "Leis"
+        },
+        {
+          "value": "Maw"
+        },
+        {
+          "value": "Nab"
+        },
+        {
+          "value": "Nae"
+        },
+        {
+          "value": "Oaf"
+        },
+        {
+          "value": "Ream"
+        },
+        {
+          "value": "Tad"
+        },
+        {
+          "value": "Wpm"
+        },
+        {
+          "value": "Yay"
+        },
+        {
+          "value": "Zap"
+        },
+        {
+          "value": "CACM"
+        },
+        {
+          "value": "Edam"
+        },
+        {
+          "value": "Qum"
+        },
+        {
+          "value": "RAMs"
+        },
+        {
+          "value": "Amu"
+        },
+        {
+          "value": "Baa"
+        },
+        {
+          "value": "Caw"
+        },
+        {
+          "value": "Ciao"
+        },
+        {
+          "value": "Fas"
+        },
+        {
+          "value": "Hap"
+        },
+        {
+          "value": "Iambs"
+        },
+        {
+          "value": "Reis"
+        },
+        {
+          "value": "Tamp"
+        },
+        {
+          "value": "Tams"
+        },
+        {
+          "value": "Taw"
+        },
+        {
+          "value": "Vim"
+        },
+        {
+          "value": "Ceil"
+        },
+        {
+          "value": "Irk"
+        },
+        {
+          "value": "Wham"
+        },
+        {
+          "value": "Yap"
+        },
+        {
+          "value": "AAA"
+        },
+        {
+          "value": "AMC"
+        },
+        {
+          "value": "Amy"
+        },
+        {
+          "value": "GM"
+        },
+        {
+          "value": "ICC"
+        },
+        {
+          "value": "IP"
+        },
+        {
+          "value": "ITV"
+        },
+        {
+          "value": "Kim"
+        },
+        {
+          "value": "OCAM"
+        },
+        {
+          "value": "RAF"
+        },
+        {
+          "value": "ROM"
+        },
+        {
+          "value": "Tim"
+        },
+        {
+          "value": "Chm"
+        },
+        {
+          "value": "Gamy"
+        },
+        {
+          "value": "Weir"
+        },
+        {
+          "value": "Gay"
+        },
+        {
+          "value": "Lams"
+        },
+        {
+          "value": "'M"
+        },
+        {
+          "value": "3M"
+        },
+        {
+          "value": "A&M"
+        },
+        {
+          "value": "A1"
+        },
+        {
+          "value": "A2"
+        },
+        {
+          "value": "A3"
+        },
+        {
+          "value": "A4"
+        },
+        {
+          "value": "A5"
+        },
+        {
+          "value": "AA"
+        },
+        {
+          "value": "AAB"
+        },
+        {
+          "value": "AAC"
+        },
+        {
+          "value": "AAD"
+        },
+        {
+          "value": "AAE"
+        },
+        {
+          "value": "AAF"
+        },
+        {
+          "value": "AAG"
+        },
+        {
+          "value": "AAH"
+        },
+        {
+          "value": "AAI"
+        },
+        {
+          "value": "AAJ"
+        },
+        {
+          "value": "AAK"
+        },
+        {
+          "value": "AAL"
+        },
+        {
+          "value": "AAMC"
+        },
+        {
+          "value": "AAN"
+        },
+        {
+          "value": "AAO"
+        },
+        {
+          "value": "AAP"
+        },
+        {
+          "value": "AAQ"
+        },
+        {
+          "value": "AAR"
+        },
+        {
+          "value": "AAS"
+        },
+        {
+          "value": "AAV"
+        },
+        {
+          "value": "AAW"
+        },
+        {
+          "value": "AAX"
+        },
+        {
+          "value": "AAY"
+        },
+        {
+          "value": "AAZ"
+        },
+        {
+          "value": "AAs"
+        },
+        {
+          "value": "AB"
+        },
+        {
+          "value": "AC"
+        },
+        {
+          "value": "AE"
+        },
+        {
+          "value": "AEM"
+        },
+        {
+          "value": "AFAM"
+        },
+        {
+          "value": "AG"
+        },
+        {
+          "value": "AGM"
+        },
+        {
+          "value": "AH"
+        },
+        {
+          "value": "AHM"
+        },
+        {
+          "value": "AI"
+        },
+        {
+          "value": "AIAA"
+        },
+        {
+          "value": "AIM"
+        },
+        {
+          "value": "AJ"
+        },
+        {
+          "value": "AK"
+        },
+        {
+          "value": "AKM"
+        },
+        {
+          "value": "AL"
+        },
+        {
+          "value": "ALM"
+        },
+        {
+          "value": "AMA"
+        },
+        {
+          "value": "AMD"
+        },
+        {
+          "value": "AME"
+        },
+        {
+          "value": "AMF"
+        },
+        {
+          "value": "AMG"
+        },
+        {
+          "value": "AMH"
+        },
+        {
+          "value": "AMI"
+        },
+        {
+          "value": "AMJ"
+        },
+        {
+          "value": "AMK"
+        },
+        {
+          "value": "AML"
+        },
+        {
+          "value": "AMM"
+        },
+        {
+          "value": "AMN"
+        },
+        {
+          "value": "AMO"
+        },
+        {
+          "value": "AMP"
+        },
+        {
+          "value": "AMQ"
+        },
+        {
+          "value": "AMR"
+        },
+        {
+          "value": "AMS"
+        },
+        {
+          "value": "AMT"
+        },
+        {
+          "value": "AMU"
+        },
+        {
+          "value": "AMV"
+        },
+        {
+          "value": "AMW"
+        },
+        {
+          "value": "AMY"
+        },
+        {
+          "value": "AMZ"
+        },
+        {
+          "value": "AN"
+        },
+        {
+          "value": "ANM"
+        },
+        {
+          "value": "AO"
+        },
+        {
+          "value": "AOM"
+        },
+        {
+          "value": "AP"
+        },
+        {
+          "value": "AQM"
+        },
+        {
+          "value": "AR"
+        },
+        {
+          "value": "ARM"
+        },
+        {
+          "value": "AS"
+        },
+        {
+          "value": "ASM"
+        },
+        {
+          "value": "AT"
+        },
+        {
+          "value": "AU"
+        },
+        {
+          "value": "AUM"
+        },
+        {
+          "value": "AV"
+        },
+        {
+          "value": "AVM"
+        },
+        {
+          "value": "AW"
+        },
+        {
+          "value": "AWM"
+        },
+        {
+          "value": "AX"
+        },
+        {
+          "value": "AXM"
+        },
+        {
+          "value": "AZ"
+        },
+        {
+          "value": "Ab"
+        },
+        {
+          "value": "Ac"
+        },
+        {
+          "value": "Ag"
+        },
+        {
+          "value": "Al"
+        },
+        {
+          "value": "Anam"
+        },
+        {
+          "value": "Ar"
+        },
+        {
+          "value": "Au"
+        },
+        {
+          "value": "BA"
+        },
+        {
+          "value": "BAA"
+        },
+        {
+          "value": "BAC"
+        },
+        {
+          "value": "BAE"
+        },
+        {
+          "value": "BAF"
+        },
+        {
+          "value": "BAH"
+        },
+        {
+          "value": "BAL"
+        },
+        {
+          "value": "BAN"
+        },
+        {
+          "value": "BAO"
+        },
+        {
+          "value": "BAP"
+        },
+        {
+          "value": "BAR"
+        },
+        {
+          "value": "BAS"
+        },
+        {
+          "value": "BAU"
+        },
+        {
+          "value": "BAV"
+        },
+        {
+          "value": "BAW"
+        },
+        {
+          "value": "BAX"
+        },
+        {
+          "value": "BAZ"
+        },
+        {
+          "value": "BBM"
+        },
+        {
+          "value": "BCAM"
+        },
+        {
+          "value": "BCM"
+        },
+        {
+          "value": "BDM"
+        },
+        {
+          "value": "BEM"
+        },
+        {
+          "value": "BFM"
+        },
+        {
+          "value": "BGM"
+        },
+        {
+          "value": "BHM"
+        },
+        {
+          "value": "BIA"
+        },
+        {
+          "value": "BIPM"
+        },
+        {
+          "value": "BJM"
+        },
+        {
+          "value": "BKM"
+        },
+        {
+          "value": "BLM"
+        },
+        {
+          "value": "BM"
+        },
+        {
+          "value": "BMM"
+        },
+        {
+          "value": "BNM"
+        },
+        {
+          "value": "BOM"
+        },
+        {
+          "value": "BSM"
+        },
+        {
+          "value": "BTM"
+        },
+        {
+          "value": "BUM"
+        },
+        {
+          "value": "BVM"
+        },
+        {
+          "value": "BWM"
+        },
+        {
+          "value": "BXM"
+        },
+        {
+          "value": "BYM"
+        },
+        {
+          "value": "Ba"
+        },
+        {
+          "value": "Bax"
+        },
+        {
+          "value": "Bim"
+        },
+        {
+          "value": "Bram"
+        },
+        {
+          "value": "CA"
+        },
+        {
+          "value": "CAB"
+        },
+        {
+          "value": "CAD"
+        },
+        {
+          "value": "CAE"
+        },
+        {
+          "value": "CAF"
+        },
+        {
+          "value": "CAG"
+        },
+        {
+          "value": "CAH"
+        },
+        {
+          "value": "CAJ"
+        },
+        {
+          "value": "CAK"
+        },
+        {
+          "value": "CAL"
+        },
+        {
+          "value": "CAMT"
+        },
+        {
+          "value": "CAMY"
+        },
+        {
+          "value": "CAN"
+        },
+        {
+          "value": "CAP"
+        },
+        {
+          "value": "CAQ"
+        },
+        {
+          "value": "CAS"
+        },
+        {
+          "value": "CASM"
+        },
+        {
+          "value": "CAT"
+        },
+        {
+          "value": "CAU"
+        },
+        {
+          "value": "CAV"
+        },
+        {
+          "value": "CAW"
+        },
+        {
+          "value": "CAY"
+        },
+        {
+          "value": "CCM"
+        },
+        {
+          "value": "CDM"
+        },
+        {
+          "value": "CEM"
+        },
+        {
+          "value": "CFM"
+        },
+        {
+          "value": "CGM"
+        },
+        {
+          "value": "CHAM"
+        },
+        {
+          "value": "CHM"
+        },
+        {
+          "value": "CIAC"
+        },
+        {
+          "value": "CICAM"
+        },
+        {
+          "value": "CICM"
+        },
+        {
+          "value": "CIEM"
+        },
+        {
+          "value": "CIGM"
+        },
+        {
+          "value": "CIM"
+        },
+        {
+          "value": "CKM"
+        },
+        {
+          "value": "CLM"
+        },
+        {
+          "value": "CM"
+        },
+        {
+          "value": "CMM"
+        },
+        {
+          "value": "CNAM"
+        },
+        {
+          "value": "CNM"
+        },
+        {
+          "value": "COM"
+        },
+        {
+          "value": "CPAM"
+        },
+        {
+          "value": "CQM"
+        },
+        {
+          "value": "CRAM"
+        },
+        {
+          "value": "CRM"
+        },
+        {
+          "value": "CSAM"
+        },
+        {
+          "value": "CSM"
+        },
+        {
+          "value": "CUM"
+        },
+        {
+          "value": "CVM"
+        },
+        {
+          "value": "CWM"
+        },
+        {
+          "value": "CXM"
+        },
+        {
+          "value": "CYM"
+        },
+        {
+          "value": "CZM"
+        },
+        {
+          "value": "Ca"
+        },
+        {
+          "value": "Camb"
+        },
+        {
+          "value": "Ceyx"
+        },
+        {
+          "value": "Cham"
+        },
+        {
+          "value": "DAA"
+        },
+        {
+          "value": "DAB"
+        },
+        {
+          "value": "DAE"
+        },
+        {
+          "value": "DAF"
+        },
+        {
+          "value": "DAI"
+        },
+        {
+          "value": "DAJ"
+        },
+        {
+          "value": "DAK"
+        },
+        {
+          "value": "DAL"
+        },
+        {
+          "value": "DAP"
+        },
+        {
+          "value": "DAR"
+        },
+        {
+          "value": "DAU"
+        },
+        {
+          "value": "DAV"
+        },
+        {
+          "value": "DAX"
+        },
+        {
+          "value": "DDM"
+        },
+        {
+          "value": "DEM"
+        },
+        {
+          "value": "DFM"
+        },
+        {
+          "value": "DHM"
+        },
+        {
+          "value": "DIA"
+        },
+        {
+          "value": "DIAC"
+        },
+        {
+          "value": "DIMM"
+        },
+        {
+          "value": "DMM"
+        },
+        {
+          "value": "DOM"
+        },
+        {
+          "value": "DRAM"
+        },
+        {
+          "value": "DXM"
+        },
+        {
+          "value": "Dag"
+        },
+        {
+          "value": "Dama"
+        },
+        {
+          "value": "Dem"
+        },
+        {
+          "value": "Díaz"
+        },
+        {
+          "value": "EAA"
+        },
+        {
+          "value": "EAC"
+        },
+        {
+          "value": "EAD"
+        },
+        {
+          "value": "EAE"
+        },
+        {
+          "value": "EAH"
+        },
+        {
+          "value": "EAI"
+        },
+        {
+          "value": "EAK"
+        },
+        {
+          "value": "EAL"
+        },
+        {
+          "value": "EAN"
+        },
+        {
+          "value": "EAO"
+        },
+        {
+          "value": "EAP"
+        },
+        {
+          "value": "EAS"
+        },
+        {
+          "value": "EAT"
+        },
+        {
+          "value": "EAU"
+        },
+        {
+          "value": "EAV"
+        },
+        {
+          "value": "EAX"
+        },
+        {
+          "value": "EAY"
+        },
+        {
+          "value": "ECAM"
+        },
+        {
+          "value": "ECM"
+        },
+        {
+          "value": "EDM"
+        },
+        {
+          "value": "EEM"
+        },
+        {
+          "value": "EIA"
+        },
+        {
+          "value": "EIAJ"
+        },
+        {
+          "value": "EM"
+        },
+        {
+          "value": "EMM"
+        },
+        {
+          "value": "ENM"
+        },
+        {
+          "value": "EOM"
+        },
+        {
+          "value": "EPM"
+        },
+        {
+          "value": "EQM"
+        },
+        {
+          "value": "ESM"
+        },
+        {
+          "value": "ETAM"
+        },
+        {
+          "value": "ETM"
+        },
+        {
+          "value": "EVM"
+        },
+        {
+          "value": "Ea"
+        },
+        {
+          "value": "FA"
+        },
+        {
+          "value": "FAA"
+        },
+        {
+          "value": "FAB"
+        },
+        {
+          "value": "FAE"
+        },
+        {
+          "value": "FAF"
+        },
+        {
+          "value": "FAG"
+        },
+        {
+          "value": "FAH"
+        },
+        {
+          "value": "FAI"
+        },
+        {
+          "value": "FAK"
+        },
+        {
+          "value": "FAP"
+        },
+        {
+          "value": "FARM"
+        },
+        {
+          "value": "FAS"
+        },
+        {
+          "value": "FASM"
+        },
+        {
+          "value": "FAT"
+        },
+        {
+          "value": "FAX"
+        },
+        {
+          "value": "FAZ"
+        },
+        {
+          "value": "FBM"
+        },
+        {
+          "value": "FCM"
+        },
+        {
+          "value": "FDM"
+        },
+        {
+          "value": "FEM"
+        },
+        {
+          "value": "FFAM"
+        },
+        {
+          "value": "FFM"
+        },
+        {
+          "value": "FGM"
+        },
+        {
+          "value": "FHM"
+        },
+        {
+          "value": "FIA"
+        },
+        {
+          "value": "FIAT"
+        },
+        {
+          "value": "FIAV"
+        },
+        {
+          "value": "FIM"
+        },
+        {
+          "value": "FKM"
+        },
+        {
+          "value": "FLM"
+        },
+        {
+          "value": "FMM"
+        },
+        {
+          "value": "FPM"
+        },
+        {
+          "value": "FRM"
+        },
+        {
+          "value": "FTAM"
+        },
+        {
+          "value": "FTM"
+        },
+        {
+          "value": "Fein"
+        },
+        {
+          "value": "Fm"
+        },
+        {
+          "value": "GA"
+        },
+        {
+          "value": "GA3"
+        },
+        {
+          "value": "GAA"
+        },
+        {
+          "value": "GAB"
+        },
+        {
+          "value": "GAC"
+        },
+        {
+          "value": "GAD"
+        },
+        {
+          "value": "GAE"
+        },
+        {
+          "value": "GAG"
+        },
+        {
+          "value": "GAL"
+        },
+        {
+          "value": "GAO"
+        },
+        {
+          "value": "GAP"
+        },
+        {
+          "value": "GAR"
+        },
+        {
+          "value": "GAS"
+        },
+        {
+          "value": "GAV"
+        },
+        {
+          "value": "GCM"
+        },
+        {
+          "value": "GDM"
+        },
+        {
+          "value": "GEM"
+        },
+        {
+          "value": "GHM"
+        },
+        {
+          "value": "GIA"
+        },
+        {
+          "value": "GLM"
+        },
+        {
+          "value": "GQM"
+        },
+        {
+          "value": "GSM"
+        },
+        {
+          "value": "GTM"
+        },
+        {
+          "value": "GUAM"
+        },
+        {
+          "value": "GUM"
+        },
+        {
+          "value": "Ga"
+        },
+        {
+          "value": "Gama"
+        },
+        {
+          "value": "Gao"
+        },
+        {
+          "value": "H&M"
+        },
+        {
+          "value": "HA"
+        },
+        {
+          "value": "HAC"
+        },
+        {
+          "value": "HAE"
+        },
+        {
+          "value": "HAI"
+        },
+        {
+          "value": "HAMC"
+        },
+        {
+          "value": "HAP"
+        },
+        {
+          "value": "HBM"
+        },
+        {
+          "value": "HCM"
+        },
+        {
+          "value": "HDM"
+        },
+        {
+          "value": "HIA"
+        },
+        {
+          "value": "HLM"
+        },
+        {
+          "value": "HM"
+        },
+        {
+          "value": "HOM"
+        },
+        {
+          "value": "HRM"
+        },
+        {
+          "value": "HSM"
+        },
+        {
+          "value": "Ha"
+        },
+        {
+          "value": "Hab"
+        },
+        {
+          "value": "Hal"
+        },
+        {
+          "value": "Hama"
+        },
+        {
+          "value": "Hamm"
+        },
+        {
+          "value": "Haw"
+        },
+        {
+          "value": "Hein"
+        },
+        {
+          "value": "I&S"
+        },
+        {
+          "value": "I10"
+        },
+        {
+          "value": "I11"
+        },
+        {
+          "value": "I12"
+        },
+        {
+          "value": "I15"
+        },
+        {
+          "value": "I16"
+        },
+        {
+          "value": "I19"
+        },
+        {
+          "value": "I20"
+        },
+        {
+          "value": "I21"
+        },
+        {
+          "value": "I22"
+        },
+        {
+          "value": "I24"
+        },
+        {
+          "value": "I25"
+        },
+        {
+          "value": "I26"
+        },
+        {
+          "value": "I27"
+        },
+        {
+          "value": "I29"
+        },
+        {
+          "value": "I30"
+        },
+        {
+          "value": "I35"
+        },
+        {
+          "value": "I37"
+        },
+        {
+          "value": "I39"
+        },
+        {
+          "value": "I40"
+        },
+        {
+          "value": "I42"
+        },
+        {
+          "value": "I43"
+        },
+        {
+          "value": "I44"
+        },
+        {
+          "value": "I45"
+        },
+        {
+          "value": "I49"
+        },
+        {
+          "value": "I53"
+        },
+        {
+          "value": "I64"
+        },
+        {
+          "value": "I65"
+        },
+        {
+          "value": "I66"
+        },
+        {
+          "value": "I68"
+        },
+        {
+          "value": "I69"
+        },
+        {
+          "value": "I70"
+        },
+        {
+          "value": "I71"
+        },
+        {
+          "value": "I72"
+        },
+        {
+          "value": "I73"
+        },
+        {
+          "value": "I74"
+        },
+        {
+          "value": "I77"
+        },
+        {
+          "value": "I78"
+        },
+        {
+          "value": "I79"
+        },
+        {
+          "value": "I80"
+        },
+        {
+          "value": "I81"
+        },
+        {
+          "value": "I82"
+        },
+        {
+          "value": "I83"
+        },
+        {
+          "value": "I84"
+        },
+        {
+          "value": "I85"
+        },
+        {
+          "value": "I86"
+        },
+        {
+          "value": "I87"
+        },
+        {
+          "value": "I88"
+        },
+        {
+          "value": "I89"
+        },
+        {
+          "value": "I95"
+        },
+        {
+          "value": "I97"
+        },
+        {
+          "value": "I99"
+        },
+        {
+          "value": "IADB"
+        },
+        {
+          "value": "IADC"
+        },
+        {
+          "value": "IAFE"
+        },
+        {
+          "value": "IAGA"
+        },
+        {
+          "value": "IANZ"
+        },
+        {
+          "value": "IARD"
+        },
+        {
+          "value": "IASB"
+        },
+        {
+          "value": "IASI"
+        },
+        {
+          "value": "IB"
+        },
+        {
+          "value": "IB1"
+        },
+        {
+          "value": "IBA"
+        },
+        {
+          "value": "IBAN"
+        },
+        {
+          "value": "IBB"
+        },
+        {
+          "value": "IBC"
+        },
+        {
+          "value": "IBD"
+        },
+        {
+          "value": "IBE"
+        },
+        {
+          "value": "IBL"
+        },
+        {
+          "value": "IBO"
+        },
+        {
+          "value": "IBR"
+        },
+        {
+          "value": "IC"
+        },
+        {
+          "value": "ICA"
+        },
+        {
+          "value": "ICAO"
+        },
+        {
+          "value": "ICAP"
+        },
+        {
+          "value": "ICB"
+        },
+        {
+          "value": "ICD"
+        },
+        {
+          "value": "ICE"
+        },
+        {
+          "value": "ICF"
+        },
+        {
+          "value": "ICH"
+        },
+        {
+          "value": "ICI"
+        },
+        {
+          "value": "ICML"
+        },
+        {
+          "value": "ICMR"
+        },
+        {
+          "value": "ID3"
+        },
+        {
+          "value": "IDA"
+        },
+        {
+          "value": "IDE"
+        },
+        {
+          "value": "IDH"
+        },
+        {
+          "value": "IDK"
+        },
+        {
+          "value": "IDMS"
+        },
+        {
+          "value": "IDN"
+        },
+        {
+          "value": "IDP"
+        },
+        {
+          "value": "IDQ"
+        },
+        {
+          "value": "IDR"
+        },
+        {
+          "value": "IDS"
+        },
+        {
+          "value": "IDT"
+        },
+        {
+          "value": "IE"
+        },
+        {
+          "value": "IEAG"
+        },
+        {
+          "value": "IEF"
+        },
+        {
+          "value": "IEG"
+        },
+        {
+          "value": "IEMN"
+        },
+        {
+          "value": "IEOM"
+        },
+        {
+          "value": "IES"
+        },
+        {
+          "value": "IF"
+        },
+        {
+          "value": "IFAS"
+        },
+        {
+          "value": "IFD"
+        },
+        {
+          "value": "IFF"
+        },
+        {
+          "value": "IFI"
+        },
+        {
+          "value": "IFMA"
+        },
+        {
+          "value": "IFMK"
+        },
+        {
+          "value": "IFN"
+        },
+        {
+          "value": "IFO"
+        },
+        {
+          "value": "IFS"
+        },
+        {
+          "value": "IFU"
+        },
+        {
+          "value": "IGAS"
+        },
+        {
+          "value": "IGC"
+        },
+        {
+          "value": "IGE"
+        },
+        {
+          "value": "IGF"
+        },
+        {
+          "value": "IGH"
+        },
+        {
+          "value": "IGI"
+        },
+        {
+          "value": "IGN"
+        },
+        {
+          "value": "IGP"
+        },
+        {
+          "value": "IGS"
+        },
+        {
+          "value": "IGY"
+        },
+        {
+          "value": "IHD"
+        },
+        {
+          "value": "IHP"
+        },
+        {
+          "value": "IHT"
+        },
+        {
+          "value": "IHU"
+        },
+        {
+          "value": "II"
+        },
+        {
+          "value": "IIA"
+        },
+        {
+          "value": "IIC"
+        },
+        {
+          "value": "IIF"
+        },
+        {
+          "value": "III"
+        },
+        {
+          "value": "IIN"
+        },
+        {
+          "value": "IINM"
+        },
+        {
+          "value": "IIS"
+        },
+        {
+          "value": "IITM"
+        },
+        {
+          "value": "IJ"
+        },
+        {
+          "value": "IJF"
+        },
+        {
+          "value": "IKB"
+        },
+        {
+          "value": "IL"
+        },
+        {
+          "value": "IL2"
+        },
+        {
+          "value": "ILA"
+        },
+        {
+          "value": "ILC"
+        },
+        {
+          "value": "ILG"
+        },
+        {
+          "value": "ILN"
+        },
+        {
+          "value": "ILO"
+        },
+        {
+          "value": "ILP"
+        },
+        {
+          "value": "IMAF"
+        },
+        {
+          "value": "IMAG"
+        },
+        {
+          "value": "IMAO"
+        },
+        {
+          "value": "IMAX"
+        },
+        {
+          "value": "IMB"
+        },
+        {
+          "value": "IMD"
+        },
+        {
+          "value": "IME"
+        },
+        {
+          "value": "IMH"
+        },
+        {
+          "value": "IMK"
+        },
+        {
+          "value": "IMN"
+        },
+        {
+          "value": "IMP"
+        },
+        {
+          "value": "IMS"
+        },
+        {
+          "value": "IMV"
+        },
+        {
+          "value": "IMs"
+        },
+        {
+          "value": "IN"
+        },
+        {
+          "value": "INA"
+        },
+        {
+          "value": "INAC"
+        },
+        {
+          "value": "INAMI"
+        },
+        {
+          "value": "INB"
+        },
+        {
+          "value": "INC"
+        },
+        {
+          "value": "IND"
+        },
+        {
+          "value": "INE"
+        },
+        {
+          "value": "INF"
+        },
+        {
+          "value": "ING"
+        },
+        {
+          "value": "INH"
+        },
+        {
+          "value": "INMA"
+        },
+        {
+          "value": "INP"
+        },
+        {
+          "value": "INR"
+        },
+        {
+          "value": "INT"
+        },
+        {
+          "value": "IOB"
+        },
+        {
+          "value": "IOF"
+        },
+        {
+          "value": "IOI"
+        },
+        {
+          "value": "ION"
+        },
+        {
+          "value": "IOP"
+        },
+        {
+          "value": "IOR"
+        },
+        {
+          "value": "IOS"
+        },
+        {
+          "value": "IOT"
+        },
+        {
+          "value": "IOV"
+        },
+        {
+          "value": "IPAAM"
+        },
+        {
+          "value": "IPAG"
+        },
+        {
+          "value": "IPAs"
+        },
+        {
+          "value": "IPB"
+        },
+        {
+          "value": "IPBM"
+        },
+        {
+          "value": "IPD"
+        },
+        {
+          "value": "IPE"
+        },
+        {
+          "value": "IPF"
+        },
+        {
+          "value": "IPG"
+        },
+        {
+          "value": "IPJ"
+        },
+        {
+          "value": "IPT"
+        },
+        {
+          "value": "IPY"
+        },
+        {
+          "value": "IPs"
+        },
+        {
+          "value": "IQR"
+        },
+        {
+          "value": "IR"
+        },
+        {
+          "value": "IRAO"
+        },
+        {
+          "value": "IRAS"
+        },
+        {
+          "value": "IRB"
+        },
+        {
+          "value": "IRC"
+        },
+        {
+          "value": "IRCAM"
+        },
+        {
+          "value": "IRD"
+        },
+        {
+          "value": "IRE"
+        },
+        {
+          "value": "IREM"
+        },
+        {
+          "value": "IRG"
+        },
+        {
+          "value": "IRI"
+        },
+        {
+          "value": "IRN"
+        },
+        {
+          "value": "IRO"
+        },
+        {
+          "value": "IRP"
+        },
+        {
+          "value": "IRR"
+        },
+        {
+          "value": "IRT"
+        },
+        {
+          "value": "IRU"
+        },
+        {
+          "value": "IS"
+        },
+        {
+          "value": "ISA"
+        },
+        {
+          "value": "ISAS"
+        },
+        {
+          "value": "ISB"
+        },
+        {
+          "value": "ISC"
+        },
+        {
+          "value": "ISCM"
+        },
+        {
+          "value": "ISD"
+        },
+        {
+          "value": "ISF"
+        },
+        {
+          "value": "ISG"
+        },
+        {
+          "value": "ISI"
+        },
+        {
+          "value": "ISK"
+        },
+        {
+          "value": "ISL"
+        },
+        {
+          "value": "ISME"
+        },
+        {
+          "value": "ISN"
+        },
+        {
+          "value": "ISO"
+        },
+        {
+          "value": "ISR"
+        },
+        {
+          "value": "ISS"
+        },
+        {
+          "value": "IST"
+        },
+        {
+          "value": "ISU"
+        },
+        {
+          "value": "ISV"
+        },
+        {
+          "value": "IT"
+        },
+        {
+          "value": "ITA"
+        },
+        {
+          "value": "ITAs"
+        },
+        {
+          "value": "ITB"
+        },
+        {
+          "value": "ITK"
+        },
+        {
+          "value": "ITL"
+        },
+        {
+          "value": "ITO"
+        },
+        {
+          "value": "ITP"
+        },
+        {
+          "value": "ITS"
+        },
+        {
+          "value": "ITSM"
+        },
+        {
+          "value": "IU"
+        },
+        {
+          "value": "IUEM"
+        },
+        {
+          "value": "IUF"
+        },
+        {
+          "value": "IUFM"
+        },
+        {
+          "value": "IV"
+        },
+        {
+          "value": "IVD"
+        },
+        {
+          "value": "IVF"
+        },
+        {
+          "value": "IVG"
+        },
+        {
+          "value": "IVI"
+        },
+        {
+          "value": "IVR"
+        },
+        {
+          "value": "IWC"
+        },
+        {
+          "value": "IWF"
+        },
+        {
+          "value": "IWW"
+        },
+        {
+          "value": "IX"
+        },
+        {
+          "value": "IXC"
+        },
+        {
+          "value": "IXL"
+        },
+        {
+          "value": "IXV"
+        },
+        {
+          "value": "IZ"
+        },
+        {
+          "value": "IaaS"
+        },
+        {
+          "value": "Iasi"
+        },
+        {
+          "value": "Iban"
+        },
+        {
+          "value": "Ibo"
+        },
+        {
+          "value": "Ida"
+        },
+        {
+          "value": "Ide"
+        },
+        {
+          "value": "Ido"
+        },
+        {
+          "value": "Ier"
+        },
+        {
+          "value": "Ike"
+        },
+        {
+          "value": "Ila"
+        },
+        {
+          "value": "Iman"
+        },
+        {
+          "value": "Inc"
+        },
+        {
+          "value": "Io"
+        },
+        {
+          "value": "IoT"
+        },
+        {
+          "value": "Ir"
+        },
+        {
+          "value": "Ira"
+        },
+        {
+          "value": "Isa"
+        },
+        {
+          "value": "Ito"
+        },
+        {
+          "value": "Ive"
+        },
+        {
+          "value": "Ivo"
+        },
+        {
+          "value": "Izak"
+        },
+        {
+          "value": "JA"
+        },
+        {
+          "value": "JAA"
+        },
+        {
+          "value": "JAC"
+        },
+        {
+          "value": "JAF"
+        },
+        {
+          "value": "JAG"
+        },
+        {
+          "value": "JAI"
+        },
+        {
+          "value": "JAK"
+        },
+        {
+          "value": "JAMA"
+        },
+        {
+          "value": "JAP"
+        },
+        {
+          "value": "JIM"
+        },
+        {
+          "value": "JLM"
+        },
+        {
+          "value": "JMM"
+        },
+        {
+          "value": "Ja"
+        },
+        {
+          "value": "Jap"
+        },
+        {
+          "value": "Jas"
+        },
+        {
+          "value": "Jat"
+        },
+        {
+          "value": "Jav"
+        },
+        {
+          "value": "Jem"
+        },
+        {
+          "value": "KAL"
+        },
+        {
+          "value": "KAV"
+        },
+        {
+          "value": "KAZ"
+        },
+        {
+          "value": "KEM"
+        },
+        {
+          "value": "KFM"
+        },
+        {
+          "value": "KGM"
+        },
+        {
+          "value": "KHM"
+        },
+        {
+          "value": "KIAS"
+        },
+        {
+          "value": "KM"
+        },
+        {
+          "value": "KNM"
+        },
+        {
+          "value": "KSM"
+        },
+        {
+          "value": "Kan"
+        },
+        {
+          "value": "Kia"
+        },
+        {
+          "value": "LAH"
+        },
+        {
+          "value": "LAK"
+        },
+        {
+          "value": "LAMA"
+        },
+        {
+          "value": "LAMP"
+        },
+        {
+          "value": "LAN"
+        },
+        {
+          "value": "LAR"
+        },
+        {
+          "value": "LAT"
+        },
+        {
+          "value": "LAU"
+        },
+        {
+          "value": "LAUM"
+        },
+        {
+          "value": "LAW"
+        },
+        {
+          "value": "LAZ"
+        },
+        {
+          "value": "LBM"
+        },
+        {
+          "value": "LEM"
+        },
+        {
+          "value": "LFM"
+        },
+        {
+          "value": "LGM"
+        },
+        {
+          "value": "LIA"
+        },
+        {
+          "value": "LIM"
+        },
+        {
+          "value": "LKM"
+        },
+        {
+          "value": "LLM"
+        },
+        {
+          "value": "LRM"
+        },
+        {
+          "value": "LTM"
+        },
+        {
+          "value": "LVM"
+        },
+        {
+          "value": "La"
+        },
+        {
+          "value": "Lau"
+        },
+        {
+          "value": "Leix"
+        },
+        {
+          "value": "Ley"
+        },
+        {
+          "value": "Lias"
+        },
+        {
+          "value": "Lim"
+        },
+        {
+          "value": "M"
+        },
+        {
+          "value": "M&M"
+        },
+        {
+          "value": "MAA"
+        },
+        {
+          "value": "MAD"
+        },
+        {
+          "value": "MAE"
+        },
+        {
+          "value": "MAF"
+        },
+        {
+          "value": "MAG"
+        },
+        {
+          "value": "MAH"
+        },
+        {
+          "value": "MAJ"
+        },
+        {
+          "value": "MAK"
+        },
+        {
+          "value": "MAL"
+        },
+        {
+          "value": "MAO"
+        },
+        {
+          "value": "MAP"
+        },
+        {
+          "value": "MAR"
+        },
+        {
+          "value": "MAS"
+        },
+        {
+          "value": "MAT"
+        },
+        {
+          "value": "MAU"
+        },
+        {
+          "value": "MAV"
+        },
+        {
+          "value": "MCM"
+        },
+        {
+          "value": "MFM"
+        },
+        {
+          "value": "MGM"
+        },
+        {
+          "value": "MIM"
+        },
+        {
+          "value": "MKM"
+        },
+        {
+          "value": "MLM"
+        },
+        {
+          "value": "MM"
+        },
+        {
+          "value": "MMM"
+        },
+        {
+          "value": "MOM"
+        },
+        {
+          "value": "MPM"
+        },
+        {
+          "value": "MSAM"
+        },
+        {
+          "value": "MSM"
+        },
+        {
+          "value": "MZM"
+        },
+        {
+          "value": "Mai"
+        },
+        {
+          "value": "Maj"
+        },
+        {
+          "value": "Mei"
+        },
+        {
+          "value": "NA"
+        },
+        {
+          "value": "NAA"
+        },
+        {
+          "value": "NAB"
+        },
+        {
+          "value": "NAF"
+        },
+        {
+          "value": "NAG"
+        },
+        {
+          "value": "NAH"
+        },
+        {
+          "value": "NAK"
+        },
+        {
+          "value": "NAMC"
+        },
+        {
+          "value": "NAO"
+        },
+        {
+          "value": "NAP"
+        },
+        {
+          "value": "NAS"
+        },
+        {
+          "value": "NAT"
+        },
+        {
+          "value": "NAU"
+        },
+        {
+          "value": "NCM"
+        },
+        {
+          "value": "NEM"
+        },
+        {
+          "value": "NIA"
+        },
+        {
+          "value": "NKM"
+        },
+        {
+          "value": "NM"
+        },
+        {
+          "value": "NMM"
+        },
+        {
+          "value": "NPM"
+        },
+        {
+          "value": "NRM"
+        },
+        {
+          "value": "NSM"
+        },
+        {
+          "value": "NVM"
+        },
+        {
+          "value": "Na"
+        },
+        {
+          "value": "Nah"
+        },
+        {
+          "value": "Nan"
+        },
+        {
+          "value": "Nigam"
+        },
+        {
+          "value": "O&M"
+        },
+        {
+          "value": "OAB"
+        },
+        {
+          "value": "OAD"
+        },
+        {
+          "value": "OAE"
+        },
+        {
+          "value": "OAI"
+        },
+        {
+          "value": "OAL"
+        },
+        {
+          "value": "OAN"
+        },
+        {
+          "value": "OAO"
+        },
+        {
+          "value": "OAR"
+        },
+        {
+          "value": "OAT"
+        },
+        {
+          "value": "ODM"
+        },
+        {
+          "value": "OFM"
+        },
+        {
+          "value": "OGM"
+        },
+        {
+          "value": "OHM"
+        },
+        {
+          "value": "OIM"
+        },
+        {
+          "value": "OM"
+        },
+        {
+          "value": "OMM"
+        },
+        {
+          "value": "ONIAM"
+        },
+        {
+          "value": "ONM"
+        },
+        {
+          "value": "OOM"
+        },
+        {
+          "value": "OPM"
+        },
+        {
+          "value": "ORM"
+        },
+        {
+          "value": "OSM"
+        },
+        {
+          "value": "Om"
+        },
+        {
+          "value": "PAA"
+        },
+        {
+          "value": "PAB"
+        },
+        {
+          "value": "PAE"
+        },
+        {
+          "value": "PAF"
+        },
+        {
+          "value": "PAG"
+        },
+        {
+          "value": "PAH"
+        },
+        {
+          "value": "PAJ"
+        },
+        {
+          "value": "PAK"
+        },
+        {
+          "value": "PAL"
+        },
+        {
+          "value": "PAN"
+        },
+        {
+          "value": "PAO"
+        },
+        {
+          "value": "PAP"
+        },
+        {
+          "value": "PAQ"
+        },
+        {
+          "value": "PAR"
+        },
+        {
+          "value": "PAS"
+        },
+        {
+          "value": "PAT"
+        },
+        {
+          "value": "PAU"
+        },
+        {
+          "value": "PAX"
+        },
+        {
+          "value": "PAs"
+        },
+        {
+          "value": "PEM"
+        },
+        {
+          "value": "PGM"
+        },
+        {
+          "value": "PIAT"
+        },
+        {
+          "value": "PIM"
+        },
+        {
+          "value": "PLM"
+        },
+        {
+          "value": "POM"
+        },
+        {
+          "value": "PPM"
+        },
+        {
+          "value": "PRAM"
+        },
+        {
+          "value": "PRM"
+        },
+        {
+          "value": "PTM"
+        },
+        {
+          "value": "PUM"
+        },
+        {
+          "value": "PVM"
+        },
+        {
+          "value": "PWAM"
+        },
+        {
+          "value": "PWM"
+        },
+        {
+          "value": "Pau"
+        },
+        {
+          "value": "Pham"
+        },
+        {
+          "value": "Pia"
+        },
+        {
+          "value": "Pym"
+        },
+        {
+          "value": "QA"
+        },
+        {
+          "value": "QAG"
+        },
+        {
+          "value": "QAT"
+        },
+        {
+          "value": "QCM"
+        },
+        {
+          "value": "QIA"
+        },
+        {
+          "value": "QM"
+        },
+        {
+          "value": "QPM"
+        },
+        {
+          "value": "RA"
+        },
+        {
+          "value": "RAA"
+        },
+        {
+          "value": "RAB"
+        },
+        {
+          "value": "RAD"
+        },
+        {
+          "value": "RAE"
+        },
+        {
+          "value": "RAG"
+        },
+        {
+          "value": "RAI"
+        },
+        {
+          "value": "RAJ"
+        },
+        {
+          "value": "RAMA"
+        },
+        {
+          "value": "RAMQ"
+        },
+        {
+          "value": "RAMS"
+        },
+        {
+          "value": "RAP"
+        },
+        {
+          "value": "RAR"
+        },
+        {
+          "value": "RAS"
+        },
+        {
+          "value": "RATM"
+        },
+        {
+          "value": "RAU"
+        },
+        {
+          "value": "RAW"
+        },
+        {
+          "value": "RAY"
+        },
+        {
+          "value": "RBM"
+        },
+        {
+          "value": "RDM"
+        },
+        {
+          "value": "RFM"
+        },
+        {
+          "value": "RIA"
+        },
+        {
+          "value": "RIAA"
+        },
+        {
+          "value": "RIAO"
+        },
+        {
+          "value": "RILM"
+        },
+        {
+          "value": "RIM"
+        },
+        {
+          "value": "RIMM"
+        },
+        {
+          "value": "RJM"
+        },
+        {
+          "value": "RM"
+        },
+        {
+          "value": "ROAM"
+        },
+        {
+          "value": "RTM"
+        },
+        {
+          "value": "RVM"
+        },
+        {
+          "value": "Ra"
+        },
+        {
+          "value": "Rab"
+        },
+        {
+          "value": "Rae"
+        },
+        {
+          "value": "Rai"
+        },
+        {
+          "value": "Raj"
+        },
+        {
+          "value": "Rao"
+        },
+        {
+          "value": "SA"
+        },
+        {
+          "value": "SA2"
+        },
+        {
+          "value": "SAB"
+        },
+        {
+          "value": "SAC"
+        },
+        {
+          "value": "SAD"
+        },
+        {
+          "value": "SAE"
+        },
+        {
+          "value": "SAF"
+        },
+        {
+          "value": "SAG"
+        },
+        {
+          "value": "SAH"
+        },
+        {
+          "value": "SAI"
+        },
+        {
+          "value": "SAJ"
+        },
+        {
+          "value": "SAK"
+        },
+        {
+          "value": "SAML"
+        },
+        {
+          "value": "SAMU"
+        },
+        {
+          "value": "SAN"
+        },
+        {
+          "value": "SAO"
+        },
+        {
+          "value": "SAQ"
+        },
+        {
+          "value": "SAR"
+        },
+        {
+          "value": "SAT"
+        },
+        {
+          "value": "SAU"
+        },
+        {
+          "value": "SAV"
+        },
+        {
+          "value": "SAW"
+        },
+        {
+          "value": "SAX"
+        },
+        {
+          "value": "SAY"
+        },
+        {
+          "value": "SAZ"
+        },
+        {
+          "value": "SBM"
+        },
+        {
+          "value": "SCAM"
+        },
+        {
+          "value": "SCM"
+        },
+        {
+          "value": "SEM"
+        },
+        {
+          "value": "SFM"
+        },
+        {
+          "value": "SGAM"
+        },
+        {
+          "value": "SHM"
+        },
+        {
+          "value": "SIA"
+        },
+        {
+          "value": "SIAC"
+        },
+        {
+          "value": "SIAD"
+        },
+        {
+          "value": "SIM"
+        },
+        {
+          "value": "SIMM"
+        },
+        {
+          "value": "SJM"
+        },
+        {
+          "value": "SM"
+        },
+        {
+          "value": "SMM"
+        },
+        {
+          "value": "SPM"
+        },
+        {
+          "value": "STM"
+        },
+        {
+          "value": "SUM"
+        },
+        {
+          "value": "SVM"
+        },
+        {
+          "value": "SXM"
+        },
+        {
+          "value": "Sab"
+        },
+        {
+          "value": "Sal"
+        },
+        {
+          "value": "Sama"
+        },
+        {
+          "value": "Sami"
+        },
+        {
+          "value": "Sian"
+        },
+        {
+          "value": "Sm"
+        },
+        {
+          "value": "São"
+        },
+        {
+          "value": "TA"
+        },
+        {
+          "value": "TAA"
+        },
+        {
+          "value": "TAD"
+        },
+        {
+          "value": "TAE"
+        },
+        {
+          "value": "TAF"
+        },
+        {
+          "value": "TAG"
+        },
+        {
+          "value": "TAH"
+        },
+        {
+          "value": "TAI"
+        },
+        {
+          "value": "TAJ"
+        },
+        {
+          "value": "TAN"
+        },
+        {
+          "value": "TAO"
+        },
+        {
+          "value": "TAP"
+        },
+        {
+          "value": "TAS"
+        },
+        {
+          "value": "TAT"
+        },
+        {
+          "value": "TBM"
+        },
+        {
+          "value": "TDM"
+        },
+        {
+          "value": "TEM"
+        },
+        {
+          "value": "THM"
+        },
+        {
+          "value": "TIAA"
+        },
+        {
+          "value": "TKM"
+        },
+        {
+          "value": "TLM"
+        },
+        {
+          "value": "TM"
+        },
+        {
+          "value": "TNM"
+        },
+        {
+          "value": "TOM"
+        },
+        {
+          "value": "TQM"
+        },
+        {
+          "value": "TRM"
+        },
+        {
+          "value": "TSM"
+        },
+        {
+          "value": "TVM"
+        },
+        {
+          "value": "Tal"
+        },
+        {
+          "value": "Tama"
+        },
+        {
+          "value": "Tay"
+        },
+        {
+          "value": "Tm"
+        },
+        {
+          "value": "UAA"
+        },
+        {
+          "value": "UAB"
+        },
+        {
+          "value": "UAC"
+        },
+        {
+          "value": "UAD"
+        },
+        {
+          "value": "UAE"
+        },
+        {
+          "value": "UAG"
+        },
+        {
+          "value": "UAH"
+        },
+        {
+          "value": "UAI"
+        },
+        {
+          "value": "UAL"
+        },
+        {
+          "value": "UAP"
+        },
+        {
+          "value": "UAS"
+        },
+        {
+          "value": "UAT"
+        },
+        {
+          "value": "UAU"
+        },
+        {
+          "value": "UCM"
+        },
+        {
+          "value": "UDM"
+        },
+        {
+          "value": "UEM"
+        },
+        {
+          "value": "UGM"
+        },
+        {
+          "value": "UIA"
+        },
+        {
+          "value": "UIM"
+        },
+        {
+          "value": "UIMM"
+        },
+        {
+          "value": "UJM"
+        },
+        {
+          "value": "ULM"
+        },
+        {
+          "value": "UMM"
+        },
+        {
+          "value": "UNAM"
+        },
+        {
+          "value": "UNM"
+        },
+        {
+          "value": "USAM"
+        },
+        {
+          "value": "UTM"
+        },
+        {
+          "value": "UUM"
+        },
+        {
+          "value": "UVM"
+        },
+        {
+          "value": "VA"
+        },
+        {
+          "value": "VAB"
+        },
+        {
+          "value": "VAC"
+        },
+        {
+          "value": "VAE"
+        },
+        {
+          "value": "VAP"
+        },
+        {
+          "value": "VAR"
+        },
+        {
+          "value": "VAT"
+        },
+        {
+          "value": "VCM"
+        },
+        {
+          "value": "VDM"
+        },
+        {
+          "value": "VGM"
+        },
+        {
+          "value": "VLM"
+        },
+        {
+          "value": "VMM"
+        },
+        {
+          "value": "VNM"
+        },
+        {
+          "value": "VRAM"
+        },
+        {
+          "value": "VSM"
+        },
+        {
+          "value": "Va"
+        },
+        {
+          "value": "Val"
+        },
+        {
+          "value": "Veii"
+        },
+        {
+          "value": "WA"
+        },
+        {
+          "value": "WAB"
+        },
+        {
+          "value": "WAD"
+        },
+        {
+          "value": "WAG"
+        },
+        {
+          "value": "WAJM"
+        },
+        {
+          "value": "WAMP"
+        },
+        {
+          "value": "WAN"
+        },
+        {
+          "value": "WAV"
+        },
+        {
+          "value": "WDM"
+        },
+        {
+          "value": "WFM"
+        },
+        {
+          "value": "WHM"
+        },
+        {
+          "value": "WIA"
+        },
+        {
+          "value": "WIAA"
+        },
+        {
+          "value": "WIM"
+        },
+        {
+          "value": "WSM"
+        },
+        {
+          "value": "Wal"
+        },
+        {
+          "value": "Wein"
+        },
+        {
+          "value": "Weyl"
+        },
+        {
+          "value": "XAF"
+        },
+        {
+          "value": "XAP"
+        },
+        {
+          "value": "XAU"
+        },
+        {
+          "value": "XPM"
+        },
+        {
+          "value": "Xia"
+        },
+        {
+          "value": "Xian"
+        },
+        {
+          "value": "Xiao"
+        },
+        {
+          "value": "YAC"
+        },
+        {
+          "value": "YAG"
+        },
+        {
+          "value": "YAML"
+        },
+        {
+          "value": "YAR"
+        },
+        {
+          "value": "YEM"
+        },
+        {
+          "value": "YM"
+        },
+        {
+          "value": "YQM"
+        },
+        {
+          "value": "YUM"
+        },
+        {
+          "value": "Yama"
+        },
+        {
+          "value": "ZA"
+        },
+        {
+          "value": "ZAC"
+        },
+        {
+          "value": "ZAD"
+        },
+        {
+          "value": "ZAE"
+        },
+        {
+          "value": "ZAF"
+        },
+        {
+          "value": "ZAP"
+        },
+        {
+          "value": "ZAR"
+        },
+        {
+          "value": "ZAZ"
+        },
+        {
+          "value": "ZIM"
+        },
+        {
+          "value": "Zac"
+        },
+        {
+          "value": "Zama"
+        },
+        {
+          "value": "Aah"
+        },
+        {
+          "value": "Adm"
+        },
+        {
+          "value": "Ai"
+        },
+        {
+          "value": "Ap"
+        },
+        {
+          "value": "Atm"
+        },
+        {
+          "value": "Aw"
+        },
+        {
+          "value": "Bap"
+        },
+        {
+          "value": "Bey"
+        },
+        {
+          "value": "Bpm"
+        },
+        {
+          "value": "Camo"
+        },
+        {
+          "value": "Cay"
+        },
+        {
+          "value": "Cum"
+        },
+        {
+          "value": "Damn"
+        },
+        {
+          "value": "Dm"
+        },
+        {
+          "value": "Em"
+        },
+        {
+          "value": "Etiam"
+        },
+        {
+          "value": "Fa"
+        },
+        {
+          "value": "Fab"
+        },
+        {
+          "value": "Fac"
+        },
+        {
+          "value": "Fag"
+        },
+        {
+          "value": "Fav"
+        },
+        {
+          "value": "Fey"
+        },
+        {
+          "value": "Gad"
+        },
+        {
+          "value": "Gey"
+        },
+        {
+          "value": "Glam"
+        },
+        {
+          "value": "Hah"
+        },
+        {
+          "value": "Hame"
+        },
+        {
+          "value": "Hao"
+        },
+        {
+          "value": "Heya"
+        },
+        {
+          "value": "Hm"
+        },
+        {
+          "value": "Hmm"
+        },
+        {
+          "value": "Hào"
+        },
+        {
+          "value": "iOS"
+        },
+        {
+          "value": "Iambi"
+        },
+        {
+          "value": "Ids"
+        },
+        {
+          "value": "Ii"
+        },
+        {
+          "value": "Iii"
+        },
+        {
+          "value": "Ins"
+        },
+        {
+          "value": "Isl"
+        },
+        {
+          "value": "Iv"
+        },
+        {
+          "value": "Ix"
+        },
+        {
+          "value": "Ka"
+        },
+        {
+          "value": "Kame"
+        },
+        {
+          "value": "Kas"
+        },
+        {
+          "value": "Lamé"
+        },
+        {
+          "value": "Lav"
+        },
+        {
+          "value": "Lei"
+        },
+        {
+          "value": "Leys"
+        },
+        {
+          "value": "mAh"
+        },
+        {
+          "value": "Mah"
+        },
+        {
+          "value": "Mas"
+        },
+        {
+          "value": "Nav"
+        },
+        {
+          "value": "Nom"
+        },
+        {
+          "value": "Ogam"
+        },
+        {
+          "value": "Pram"
+        },
+        {
+          "value": "Rial"
+        },
+        {
+          "value": "Uhm"
+        },
+        {
+          "value": "Umm"
+        },
+        {
+          "value": "Vax"
+        },
+        {
+          "value": "Wad"
+        },
+        {
+          "value": "Ya"
+        },
+        {
+          "value": "Μm"
+        },
+        {
+          "value": "DAW"
+        },
+        {
+          "value": "GA4"
+        },
+        {
+          "value": "I2P"
+        },
+        {
+          "value": "ICAN"
+        },
+        {
+          "value": "INI"
+        },
+        {
+          "value": "Wasm"
+        },
+        {
+          "value": "XAML"
+        },
+        {
+          "value": "iCal"
+        },
+        {
+          "value": "xAI"
+        }
+      ],
+      "offset": 2,
+      "length": 3,
+      "context": {
+        "text": "# Iam a software engineer",
+        "offset": 2,
+        "length": 3
+      },
+      "sentence": "# Iam a software engineer",
+      "type": {
+        "typeName": "UnknownWord"
+      },
+      "rule": {
+        "id": "MORFOLOGIK_RULE_EN_US",
+        "description": "Possible spelling mistake",
+        "issueType": "misspelling",
+        "category": {
+          "id": "TYPOS",
+          "name": "Possible Typo"
+        },
+        "isPremium": false,
+        "confidence": 0.68
+      },
+      "ignoreForIncompleteSentence": false,
+      "contextForSureMatch": 0
+    }
+  ],
+  "sentenceRanges": [
+    [
+      0,
+      25
+    ]
+  ],
+  "extendedSentenceRanges": [
+    {
+      "from": 0,
+      "to": 25,
+      "detectedLanguages": [
+        {
+          "language": "en",
+          "rate": 1.0
+        }
+      ]
+    }
+  ]
+}

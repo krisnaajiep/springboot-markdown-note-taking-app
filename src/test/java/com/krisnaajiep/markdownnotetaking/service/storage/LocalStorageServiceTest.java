@@ -1,4 +1,4 @@
-package com.krisnaajiep.markdownnotetaking.service;
+package com.krisnaajiep.markdownnotetaking.service.storage;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

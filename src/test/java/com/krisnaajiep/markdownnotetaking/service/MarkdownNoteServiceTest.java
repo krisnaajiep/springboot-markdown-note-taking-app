@@ -7,6 +7,8 @@ import com.krisnaajiep.markdownnotetaking.controller.NotFoundException;
 import com.krisnaajiep.markdownnotetaking.dto.GrammarCheckResponse;
 import com.krisnaajiep.markdownnotetaking.model.Note;
 import com.krisnaajiep.markdownnotetaking.model.NoteRepository;
+import com.krisnaajiep.markdownnotetaking.service.grammar.GrammarCheckService;
+import com.krisnaajiep.markdownnotetaking.service.storage.LocalStorageService;
 import com.krisnaajiep.markdownnotetaking.validator.MarkdownFileValidator;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

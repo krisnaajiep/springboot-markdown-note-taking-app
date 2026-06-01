@@ -1,0 +1,9 @@
+{
+  "software": "Test Software",
+  "version": "1.0.0",
+  "status": "success",
+  "data": {
+    "id": 123,
+    "name": "Test Data"
+  }
+}

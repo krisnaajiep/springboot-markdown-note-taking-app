@@ -5,6 +5,8 @@ import com.krisnaajiep.markdownnotetaking.controller.NotFoundException;
 import com.krisnaajiep.markdownnotetaking.dto.GrammarCheckResponse;
 import com.krisnaajiep.markdownnotetaking.model.Note;
 import com.krisnaajiep.markdownnotetaking.model.NoteRepository;
+import com.krisnaajiep.markdownnotetaking.service.grammar.GrammarCheckService;
+import com.krisnaajiep.markdownnotetaking.service.storage.StorageService;
 import com.krisnaajiep.markdownnotetaking.validator.MarkdownFileValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

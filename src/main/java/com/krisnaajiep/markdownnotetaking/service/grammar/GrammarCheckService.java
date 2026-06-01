@@ -1,4 +1,4 @@
-package com.krisnaajiep.markdownnotetaking.service;
+package com.krisnaajiep.markdownnotetaking.service.grammar;
 
 import com.krisnaajiep.markdownnotetaking.dto.GrammarCheckResponse;
 
