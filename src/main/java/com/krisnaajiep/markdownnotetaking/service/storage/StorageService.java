@@ -1,4 +1,4 @@
-package com.krisnaajiep.markdownnotetaking.service;
+package com.krisnaajiep.markdownnotetaking.service.storage;
 
 import java.io.IOException;
 import java.io.InputStream;

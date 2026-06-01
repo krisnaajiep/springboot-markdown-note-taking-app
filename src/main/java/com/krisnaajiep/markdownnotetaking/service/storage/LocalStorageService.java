@@ -1,4 +1,4 @@
-package com.krisnaajiep.markdownnotetaking.service;
+package com.krisnaajiep.markdownnotetaking.service.storage;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

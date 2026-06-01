@@ -1,8 +1,12 @@
 package com.krisnaajiep.markdownnotetaking.service;
 
 import com.krisnaajiep.markdownnotetaking.controller.ConflictException;
+import com.krisnaajiep.markdownnotetaking.controller.NotFoundException;
+import com.krisnaajiep.markdownnotetaking.dto.GrammarCheckResponse;
 import com.krisnaajiep.markdownnotetaking.model.Note;
 import com.krisnaajiep.markdownnotetaking.model.NoteRepository;
+import com.krisnaajiep.markdownnotetaking.service.grammar.GrammarCheckService;
+import com.krisnaajiep.markdownnotetaking.service.storage.StorageService;
 import com.krisnaajiep.markdownnotetaking.validator.MarkdownFileValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -19,6 +23,7 @@ public class MarkdownNoteService implements NoteService {
     private final NoteRepository noteRepository;
     private final StorageService storageService;
     private final MarkdownFileValidator fileValidator;
+    private final GrammarCheckService grammarCheckService;
 
     @Override
     @Transactional
@@ -43,8 +48,12 @@ public class MarkdownNoteService implements NoteService {
     }
 
     @Override
-    public void check(String filename) {
+    public GrammarCheckResponse check(String filename) throws IOException {
+        Note note = noteRepository.findByOriginalFilename(filename)
+                .orElseThrow(() -> new NotFoundException("File with original name '" + filename + "' not found"));
 
+        String text = storageService.load(note.getFilename() + ".md");
+        return grammarCheckService.check(text, "en-US");
     }
 
     @Override

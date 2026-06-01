@@ -1,9 +1,14 @@
 package com.krisnaajiep.markdownnotetaking.service;
 
+import com.krisnaajiep.markdownnotetaking.controller.BadGatewayException;
 import com.krisnaajiep.markdownnotetaking.controller.ConflictException;
 import com.krisnaajiep.markdownnotetaking.controller.InvalidFileException;
+import com.krisnaajiep.markdownnotetaking.controller.NotFoundException;
+import com.krisnaajiep.markdownnotetaking.dto.GrammarCheckResponse;
 import com.krisnaajiep.markdownnotetaking.model.Note;
 import com.krisnaajiep.markdownnotetaking.model.NoteRepository;
+import com.krisnaajiep.markdownnotetaking.service.grammar.GrammarCheckService;
+import com.krisnaajiep.markdownnotetaking.service.storage.LocalStorageService;
 import com.krisnaajiep.markdownnotetaking.validator.MarkdownFileValidator;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,6 +28,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Stream;
 
@@ -34,10 +40,18 @@ class MarkdownNoteServiceTest {
     @Mock
     private NoteRepository noteRepository;
 
+    @Mock
+    private GrammarCheckService grammarCheckService;
+
     @TempDir
     private Path tempDir;
 
     private MarkdownNoteService noteService;
+
+    @Mock
+    private LocalStorageService storageService;
+
+    private MarkdownNoteService noteServiceForCheck;
 
     private Note note;
     private MultipartFile file;
@@ -53,7 +67,19 @@ class MarkdownNoteServiceTest {
                 "content".getBytes(StandardCharsets.UTF_8)
         );
 
-        noteService = new MarkdownNoteService(noteRepository, new LocalStorageService(tempDir.toString()), new MarkdownFileValidator());
+        noteService = new MarkdownNoteService(
+                noteRepository,
+                new LocalStorageService(tempDir.toString()),
+                new MarkdownFileValidator(),
+                grammarCheckService
+        );
+
+        noteServiceForCheck = new MarkdownNoteService(
+                noteRepository,
+                storageService,
+                new MarkdownFileValidator(),
+                grammarCheckService
+        );
     }
 
     @AfterEach
@@ -92,6 +118,48 @@ class MarkdownNoteServiceTest {
         verify(noteRepository, times(1)).existsByOriginalFilename(anyString());
         verify(noteRepository, times(1)).save(any(Note.class));
         verifyNoMoreInteractions(noteRepository);
+    }
+
+    @Test
+    void check_withNoExistingFile_shouldThrowNotFoundException() {
+        when(noteRepository.findByOriginalFilename(anyString())).thenReturn(Optional.empty());
+
+        assertThrows(NotFoundException.class, () -> noteService.check("nonexistent.md"));
+
+        verify(noteRepository, times(1)).findByOriginalFilename(anyString());
+        verifyNoMoreInteractions(noteRepository);
+        verifyNoInteractions(grammarCheckService);
+    }
+
+    @Test
+    void check_withExistingFileAndErrorCheckApi_shouldThrowBadGatewayException() throws IOException {
+        when(noteRepository.findByOriginalFilename(anyString())).thenReturn(Optional.of(note));
+        when(storageService.load(anyString())).thenReturn("content");
+        when(grammarCheckService.check(anyString(), anyString())).thenThrow(new BadGatewayException("LanguageTool API is currently unavailable."));
+
+        assertThrows(BadGatewayException.class, () -> noteServiceForCheck.check(note.getOriginalFilename()));
+
+        verify(noteRepository, times(1)).findByOriginalFilename(anyString());
+        verify(storageService, times(1)).load(anyString());
+        verify(grammarCheckService, times(1)).check(anyString(), anyString());
+        verifyNoMoreInteractions(noteRepository, storageService, grammarCheckService);
+
+    }
+
+    @Test
+    void check_withExistingFile_shouldReturnGrammarCheckResponse() throws IOException {
+        GrammarCheckResponse mockResponse = GrammarCheckResponse.builder().build();
+        when(noteRepository.findByOriginalFilename(anyString())).thenReturn(Optional.of(note));
+        when(storageService.load(anyString())).thenReturn("content");
+        when(grammarCheckService.check(anyString(), anyString())).thenReturn(mockResponse);
+
+        GrammarCheckResponse response = noteServiceForCheck.check(note.getOriginalFilename());
+        assertEquals(mockResponse, response);
+
+        verify(noteRepository, times(1)).findByOriginalFilename(anyString());
+        verify(storageService, times(1)).load(anyString());
+        verify(grammarCheckService, times(1)).check(anyString(), anyString());
+        verifyNoMoreInteractions(noteRepository, storageService, grammarCheckService);
     }
 
     static Stream<Arguments> invalidFile() {
