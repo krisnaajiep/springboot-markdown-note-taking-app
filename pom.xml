@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.krisnaajiep</groupId>
     <artifactId>springboot-markdown-note-taking-app</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>springboot-markdown-note-taking-app</name>
     <description>springboot-markdown-note-taking-app</description>
     <url/>
@@ -54,6 +54,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-restclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark-all</artifactId>
+            <version>0.64.8</version>
         </dependency>
 
         <dependency>
