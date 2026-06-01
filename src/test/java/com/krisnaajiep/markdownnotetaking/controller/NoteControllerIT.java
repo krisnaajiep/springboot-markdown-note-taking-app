@@ -30,6 +30,7 @@ import java.io.InputStream;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -218,6 +219,34 @@ class NoteControllerIT {
         assertNotNull(response.getResults());
 
         mockServer.verify();
+    }
+
+    @Test
+    void list_withAllMatchListOfPath_shouldReturn200WithAppropriateResponseSize() throws Exception {
+        int count = 10;
+
+        for (int i = 0; i < count; i++) {
+            file = new MockMultipartFile(
+                    "file",
+                    i + "-test.md",
+                    MediaType.TEXT_MARKDOWN_VALUE,
+                    "content".getBytes()
+            );
+            mockMvc.perform(multipart("/notes").file(file))
+                    .andExpect(status().isCreated());
+        }
+
+        MvcResult result = mockMvc.perform(get("/notes"))
+                .andExpect(status().isOk())
+                .andReturn();
+
+        List<Note> response = objectMapper.readValue(
+                result.getResponse().getContentAsString(),
+                new TypeReference<>() {}
+        );
+
+        assertFalse(response.isEmpty());
+        assertEquals(count, response.size());
     }
 
     static Stream<Arguments> invalidFile() {

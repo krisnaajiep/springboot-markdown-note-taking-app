@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/notes")
@@ -32,5 +33,11 @@ public class NoteController {
     public ResponseEntity<GrammarCheckResponse> check(@RequestParam String filename) throws IOException {
         GrammarCheckResponse response = noteService.check(filename);
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Note>> list() throws IOException {
+        List<Note> noteList = noteService.list();
+        return ResponseEntity.ok(noteList);
     }
 }
