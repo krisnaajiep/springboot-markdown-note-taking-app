@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.RestClientException;
 
+import java.io.IOException;
+import java.nio.file.NoSuchFileException;
 import java.util.Map;
 
 @Slf4j
@@ -48,5 +50,18 @@ public class NoteExceptionHandler {
     public ResponseEntity<Object> handleRestClientException(RestClientException ex) {
         log.warn("RestClient error occurred", ex);
         return handleBadGatewayException(new BadGatewayException());
+    }
+
+    @ExceptionHandler(IOException.class)
+    public ResponseEntity<Object> handleIOException(IOException ex) {
+        log.warn("IO error occurred", ex);
+
+        if (ex instanceof NoSuchFileException) {
+            return handleNotFoundException(new NotFoundException("File not found in local storage"));
+        }
+
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
+                Map.of("error", "IO error occurred")
+        );
     }
 }
