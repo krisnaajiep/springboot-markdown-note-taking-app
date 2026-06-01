@@ -15,6 +15,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -57,8 +59,12 @@ public class MarkdownNoteService implements NoteService {
     }
 
     @Override
-    public void list() {
-
+    public List<Note> list() throws IOException {
+        List<Path> pathList = storageService.list();
+        return noteRepository.findAll().stream()
+                .filter(note -> pathList.stream()
+                        .anyMatch(path -> path.getFileName().toString().equals(note.getFilename() + ".md")))
+                .toList();
     }
 
     @Override
