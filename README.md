@@ -74,7 +74,7 @@ Once the application is running, you can interact with it using the following AP
 API documentation:
 
 - [**Swagger UI**](https://krisnaajiep.github.io/springboot-markdown-note-taking-app/)
-- [**OpenAPI Specification**](https://github.com/krisnaajiep/springboot-markdown-note-taking-app/blob/dev/openapi.yaml)
+- [**OpenAPI Specification**](https://github.com/krisnaajiep/springboot-markdown-note-taking-app/blob/dev/docs/openapi.yaml)
 
 ## Project Status
 
