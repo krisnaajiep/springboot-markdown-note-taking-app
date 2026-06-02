@@ -193,25 +193,40 @@ class MarkdownNoteServiceTest {
     }
 
     @Test
+    void render_withNonExistingFile_shouldThrowNotFoundException() {
+        when(noteRepository.findByOriginalFilename(anyString())).thenReturn(Optional.empty());
+
+        assertThrows(NotFoundException.class, () -> noteService.render("nonexistent.md"));
+
+        verify(noteRepository, times(1)).findByOriginalFilename(anyString());
+        verifyNoMoreInteractions(noteRepository);
+        verifyNoInteractions(storageService);
+    }
+
+    @Test
     void render_withFlatContent_shouldReturnStringContainHtmlParagraphHeading() throws IOException {
+        when(noteRepository.findByOriginalFilename(anyString())).thenReturn(Optional.of(note));
         when(storageService.load(anyString())).thenReturn("Hello, World!");
 
         String render = noteServiceWithMockStorageService.render("test.md");
         assertTrue(render.contains("<p>") && render.contains("</p>"));
 
+        verify(noteRepository, times(1)).findByOriginalFilename(anyString());
         verify(storageService, times(1)).load(anyString());
-        verifyNoMoreInteractions(storageService);
+        verifyNoMoreInteractions(noteRepository, storageService);
     }
 
     @Test
     void render_withMarkdownHeading_shouldReturnStringContainHtmlHeading() throws IOException {
+        when(noteRepository.findByOriginalFilename(anyString())).thenReturn(Optional.of(note));
         when(storageService.load(anyString())).thenReturn("# Intro");
 
         String render = noteServiceWithMockStorageService.render("test.md");
         assertTrue(render.contains("<h1>") && render.contains("</h1>"));
 
-        verify(storageService, times(1)).load("test.md");
-        verifyNoMoreInteractions(storageService);
+        verify(noteRepository, times(1)).findByOriginalFilename(anyString());
+        verify(storageService, times(1)).load(anyString());
+        verifyNoMoreInteractions(noteRepository, storageService);
     }
 
     static Stream<Arguments> invalidFile() {
