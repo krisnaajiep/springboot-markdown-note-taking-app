@@ -53,7 +53,7 @@ To run this project locally, you'll need Java 21 or higher. Follow these steps t
 3. Build the project using Maven:
 
    ```bash
-   mvn clean install
+   mvn clean package
    ```
    
 4. Run the application:

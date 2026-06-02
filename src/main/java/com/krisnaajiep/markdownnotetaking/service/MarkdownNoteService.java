@@ -78,6 +78,9 @@ public class MarkdownNoteService implements NoteService {
 
     @Override
     public String render(String filename) throws IOException {
+        Note note = noteRepository.findByOriginalFilename(filename)
+                .orElseThrow(() -> new NotFoundException("File with original name '" + filename + "' not found"));
+
         MutableDataSet options = new MutableDataSet();
 
         options.set(
@@ -90,7 +93,7 @@ public class MarkdownNoteService implements NoteService {
                 )
         );
 
-        String content = storageService.load(filename);
+        String content = storageService.load(note.getFilename() + ".md");
 
         Parser parser = Parser.builder(options).build();
         HtmlRenderer renderer = HtmlRenderer.builder(options).build();

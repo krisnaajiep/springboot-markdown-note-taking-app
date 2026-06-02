@@ -271,17 +271,14 @@ class NoteControllerIT {
         mockMvc.perform(multipart("/notes").file(file))
                 .andExpect(status().isCreated());
 
-        try (Stream<Path> walk = Files.walk(Path.of(fileLocation))) {
-            List<Path> pathList = walk.filter(Files::isRegularFile).toList();
-            Path first = pathList.getFirst().getFileName();
+        Note note = noteRepository.findByOriginalFilename(file.getOriginalFilename()).orElseThrow();
 
-            MvcResult result = mockMvc.perform(get("/notes/render").param("filename", first.toString()))
+        MvcResult result = mockMvc.perform(get("/notes/render").param("filename", note.getOriginalFilename()))
                     .andExpect(status().isOk())
                     .andReturn();
 
             String content = result.getResponse().getContentAsString();
             assertTrue(content.contains("<h1>Introduction</h1>"));
-        }
     }
 
     static Stream<Arguments> invalidFile() {
