@@ -1,0 +1,193 @@
+openapi: 3.1.0
+info:
+  title: Markdown Note-taking API
+  version: v1.0.0
+  description: |
+    This API allows users to manage markdown notes, including listing existing notes, saving new notes, rendering 
+    markdown to HTML, and checking grammar. The API provides endpoints for uploading markdown files, retrieving note 
+    metadata, and performing grammar checks on the content of the notes.
+    
+    [GitHub repository](https://github.com/krisnaajiep/springboot-markdown-notetaking-app)
+  contact:
+    email: krisnaajiep@gmail.com
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: http://localhost:8080
+    description: Generated server url
+tags:
+  - name: Note
+    description: Operations related to markdown notes
+paths:
+  /notes:
+    get:
+      tags:
+        - Note
+      summary: List Markdown Notes
+      description: Retrieve a list of all markdown notes with their metadata
+      operationId: list
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Note"
+    post:
+      tags:
+        - Note
+      summary: Save Markdown Note
+      description: Save the uploaded markdown note and return the saved note information
+      operationId: save
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Note"
+        "400":
+          description: Bad Request - Invalid file upload
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        "409":
+          description: Conflict - Note with the same filename already exists
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /notes/render:
+    get:
+      tags:
+        - Note
+      summary: Render Markdown Note
+      description: Render the markdown note to HTML
+      operationId: render
+      parameters:
+        - name: filename
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            text/html:
+              schema:
+                type: string
+        "404":
+          description: Not Found - Note not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /notes/check:
+    get:
+      tags:
+        - Note
+      summary: Check Grammar of Markdown Note
+      description: Check the grammar of the markdown note and return the results
+      operationId: check
+      parameters:
+        - name: filename
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GrammarCheck"
+        "404":
+          description: Not Found - Note not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+components:
+  schemas:
+    Note:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        filename:
+          type: string
+          format: uuid
+        originalFilename:
+          type: string
+          example: "note.md"
+        createdAt:
+          type: string
+          format: date-time
+    GrammarCheck:
+      type: object
+      properties:
+        software:
+          type: string
+          example: "LanguageTool"
+        language:
+          type: string
+          example: "English (US)"
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/GrammarCheckResult"
+    GrammarCheckResult:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Possible spelling mistake found."
+        suggestions:
+          type: array
+          items:
+            type: string
+          example: [ "I am", "I'm" ]
+        offset:
+          type: integer
+          format: int32
+          example: 2
+        length:
+          type: integer
+          format: int32
+          example: 3
+        context:
+          type: object
+          additionalProperties: { }
+          example: {
+            "text": "# Iam a software engineer",
+            "offset": 2,
+            "length": 3
+          }
