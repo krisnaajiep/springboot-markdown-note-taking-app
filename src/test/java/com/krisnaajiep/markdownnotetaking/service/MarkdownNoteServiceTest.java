@@ -192,6 +192,28 @@ class MarkdownNoteServiceTest {
         verifyNoMoreInteractions(noteRepository, storageService);
     }
 
+    @Test
+    void render_withFlatContent_shouldReturnStringContainHtmlParagraphHeading() throws IOException {
+        when(storageService.load(anyString())).thenReturn("Hello, World!");
+
+        String render = noteServiceWithMockStorageService.render("test.md");
+        assertTrue(render.contains("<p>") && render.contains("</p>"));
+
+        verify(storageService, times(1)).load(anyString());
+        verifyNoMoreInteractions(storageService);
+    }
+
+    @Test
+    void render_withMarkdownHeading_shouldReturnStringContainHtmlHeading() throws IOException {
+        when(storageService.load(anyString())).thenReturn("# Intro");
+
+        String render = noteServiceWithMockStorageService.render("test.md");
+        assertTrue(render.contains("<h1>") && render.contains("</h1>"));
+
+        verify(storageService, times(1)).load("test.md");
+        verifyNoMoreInteractions(storageService);
+    }
+
     static Stream<Arguments> invalidFile() {
         return Stream.of(
                 Arguments.argumentSet("Null", (Object) null),
@@ -200,4 +222,6 @@ class MarkdownNoteServiceTest {
                 Arguments.argumentSet("PDF extension", new MockMultipartFile("file", "test.pdf", MediaType.APPLICATION_PDF_VALUE, new byte[1]))
         );
     }
+
+
 }

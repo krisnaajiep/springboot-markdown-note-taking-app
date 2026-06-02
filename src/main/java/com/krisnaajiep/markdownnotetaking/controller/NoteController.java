@@ -35,9 +35,17 @@ public class NoteController {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Note>> list() throws IOException {
         List<Note> noteList = noteService.list();
         return ResponseEntity.ok(noteList);
+    }
+
+    @GetMapping(
+            value = "/render",
+            produces = MediaType.TEXT_HTML_VALUE
+    )
+    public String render(@RequestParam String filename) throws IOException {
+        return noteService.render(filename);
     }
 }

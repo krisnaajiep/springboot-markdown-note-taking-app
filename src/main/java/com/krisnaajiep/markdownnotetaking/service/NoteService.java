@@ -14,5 +14,5 @@ public interface NoteService {
 
     List<Note> list() throws IOException;
 
-    void render(String filename) throws IOException;
+    String render(String filename) throws IOException;
 }

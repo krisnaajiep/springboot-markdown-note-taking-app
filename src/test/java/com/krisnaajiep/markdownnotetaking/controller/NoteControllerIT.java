@@ -166,7 +166,8 @@ class NoteControllerIT {
 
         Map<String, String> response = objectMapper.readValue(
                 result.getResponse().getContentAsString(),
-                new TypeReference<>() {}
+                new TypeReference<>() {
+                }
         );
 
         assertFalse(response.get("error").isBlank());
@@ -188,7 +189,8 @@ class NoteControllerIT {
 
         Map<String, String> response = objectMapper.readValue(
                 result.getResponse().getContentAsString(),
-                new TypeReference<>() {}
+                new TypeReference<>() {
+                }
         );
 
         assertFalse(response.get("error").isBlank());
@@ -242,11 +244,44 @@ class NoteControllerIT {
 
         List<Note> response = objectMapper.readValue(
                 result.getResponse().getContentAsString(),
-                new TypeReference<>() {}
+                new TypeReference<>() {
+                }
         );
 
         assertFalse(response.isEmpty());
         assertEquals(count, response.size());
+    }
+
+    @Test
+    void render_withNonExistingFile_shouldReturn404() throws Exception {
+        MvcResult result = mockMvc.perform(get("/notes/render").param("filename", "nonexistent.md"))
+                .andExpect(status().isNotFound())
+                .andReturn();
+
+        Map<String, String> response = objectMapper.readValue(
+                result.getResponse().getContentAsString(),
+                new TypeReference<>() {}
+        );
+
+        assertFalse(response.get("error").isBlank());
+    }
+
+    @Test
+    void render_withExistingFileContainMarkdownHeading_shouldReturn200WAndContainHtmlHeading() throws Exception {
+        mockMvc.perform(multipart("/notes").file(file))
+                .andExpect(status().isCreated());
+
+        try (Stream<Path> walk = Files.walk(Path.of(fileLocation))) {
+            List<Path> pathList = walk.filter(Files::isRegularFile).toList();
+            Path first = pathList.getFirst().getFileName();
+
+            MvcResult result = mockMvc.perform(get("/notes/render").param("filename", first.toString()))
+                    .andExpect(status().isOk())
+                    .andReturn();
+
+            String content = result.getResponse().getContentAsString();
+            assertTrue(content.contains("<h1>Introduction</h1>"));
+        }
     }
 
     static Stream<Arguments> invalidFile() {
